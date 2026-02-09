@@ -1,0 +1,9 @@
+{
+  "registries": {
+    "@ai-elements": "https://registry.ai-sdk.dev/{name}.json",
+    "@basecn": "https://basecn.dev/r/{name}",
+    "@coss": "https://coss.com/ui/r/{name}.json",
+    "@elements": "https://www.tryelements.dev/r/registry.json",
+    "@reui": "https://reui.io/r/{name}.json"
+  }
+}

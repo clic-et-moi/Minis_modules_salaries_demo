@@ -1,0 +1,401 @@
+{
+  "modules": [
+    {
+      "id": "cyberharcelement",
+      "icon": "👥",
+      "title": "Cyberharcèlement — Reconnaître, réagir, signaler",
+      "description": "Apprenez à identifier le harcèlement en ligne et découvrez le plan d'action concret pour vous protéger.",
+      "duration": "5 min",
+      "level": "Débutant",
+      "steps": [
+        {
+          "id": "c1",
+          "type": "question",
+          "message": "Bonjour ! Prêt(e) à décortiquer un sujet important de notre vie en ligne ? Aujourd'hui, on parle du cyberharcèlement. Pas de panique, je vais vous montrer que face à ça, vous n'êtes pas démuni(e).",
+          "options": [ { "id": "a", "label": "C'est parti !", "correct": true, "feedback": "" } ],
+          "tip": "Face au cyberharcèlement, vous avez toujours des solutions.",
+          "next": "c2"
+        },
+        {
+          "id": "c2",
+          "type": "question",
+          "message": "Pour bien comprendre, laissez-moi vous raconter l'histoire de Martine, 62 ans, passionnée de jardinage. Martine adore partager des photos de ses roses sur un groupe Facebook. Un jour, sous une de ses photos, un commentaire apparaît : \"Franchement moche, arrêtez de poster ça\".",
+          "image_url": "path/to/martine_jardin.jpg",
+          "options": [ { "id": "a", "label": "Vexant, en effet...", "correct": true, "feedback": "" } ],
+          "tip": "Une critique isolée, même méchante, n'est pas encore du harcèlement.",
+          "next": "c3"
+        },
+        {
+          "id": "c3",
+          "type": "question",
+          "message": "Mais l'histoire ne s'arrête pas là. Le lendemain, ce sont 10 commentaires. Puis cette personne crée un faux profil avec la photo de Martine, et commence à publier dans le groupe : \"Les roses de Martine sont pleines de pesticides interdits, n'achetez pas ses plantes !\".",
+          "options": [ { "id": "a", "label": "Ah, là ça devient sérieux.", "correct": true, "feedback": "" } ],
+          "tip": "La répétition des attaques et l'usurpation d'identité sont des signes clairs de harcèlement.",
+          "next": "c4"
+        },
+        {
+          "id": "c4",
+          "type": "question",
+          "message": "D'après vous, à quel moment la situation de Martine est-elle devenue du harcèlement ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Dès le premier commentaire \"moche\".",
+              "correct": false,
+              "feedback": "C'est une nuance cruciale. Le premier commentaire est une incivilité, mais pas encore du harcèlement. C'est l'acharnement qui transforme la méchanceté en délit."
+            },
+            {
+              "id": "b",
+              "label": "Quand les attaques sont devenues répétées et personnelles.",
+              "correct": true,
+              "feedback": "Exactement. Vous avez mis le doigt dessus. Le harcèlement, ce n'est pas le commentaire isolé, c'est l'acharnement et l'attaque personnelle."
+            }
+          ],
+          "tip": "Le harcèlement se définit par la répétition des propos et leur intention de nuire.",
+          "next": "c5"
+        },
+        {
+          "id": "c5",
+          "type": "question",
+          "message": "Maintenant, la partie la plus importante : que doit faire Martine ? Voici le plan d'action en 3 étapes. \n\nÉtape 1 : La PREUVE. Avant toute chose, il faut \"photographier\" la scène du crime avec une capture d'écran.",
+          "image_url": "path/to/capture_ecran_tuto.gif",
+          "options": [ { "id": "a", "label": "Étape suivante : le Blocage", "correct": true, "feedback": "" } ],
+          "tip": "La capture d'écran est la pièce à conviction numéro 1.",
+          "next": "c6"
+        },
+        {
+          "id": "c6",
+          "type": "question",
+          "message": "Étape 2 : Le BLOCAGE. Il est temps de claquer la porte au nez du harceleur. Sur le profil ou le message, cherchez les '...' et cliquez sur 'Bloquer'.",
+          "image_url": "path/to/blocage_tuto.gif",
+          "options": [ { "id": "a", "label": "Dernière étape : le Signalement", "correct": true, "feedback": "" } ],
+          "tip": "Bloquer permet de reprendre le contrôle de son espace personnel immédiatement.",
+          "next": "c7"
+        },
+        {
+          "id": "c7",
+          "type": "question",
+          "message": "Enfin, Étape 3 : Le SIGNALEMENT. Pour alerter la 'police' du réseau social, quelle est la bonne démarche ?",
+          "image_url": "path/to/signalement_logo.jpg",
+          "options": [
+            {
+              "id": "a",
+              "label": "Signaler à la plateforme ET contacter la police si c'est grave.",
+              "correct": true,
+              "feedback": "Parfait ! On signale à la plateforme (Facebook, etc.) pour faire supprimer le contenu, et on contacte la police (via Pharos ou plainte) pour les cas graves (menaces, usurpation...). "
+            },
+            {
+              "id": "b",
+              "label": "Juste signaler à la plateforme, ça suffit.",
+              "correct": false,
+              "feedback": "C'est un bon début, mais si le cas est grave (menaces, usurpation d'identité...), il est essentiel de contacter également les autorités compétentes (Pharos, police)."
+            }
+          ],
+          "tip": "Signaler à la plateforme est utile, déposer plainte est nécessaire si l'infraction est grave.",
+          "next": "c8"
+        },
+        {
+          "id": "c8",
+          "type": "question",
+          "message": "Pour résumer : \n1. JE CAPTURE (preuves) \n2. JE BLOQUE (protection) \n3. JE SIGNALE (action)\n\nVoilà, ce n'est plus une montagne, mais des actions claires qui vous redonnent le pouvoir.",
+          "options": [ { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Bravo pour avoir terminé ce module important !" } ],
+          "tip": "Capture, Blocage, Signalement : le trio gagnant contre le harcèlement.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Faire des captures d'écran", "Bloquer la personne", "Signaler le contenu et/ou à la police"],
+        "actions": ["Enregistrer le 3018 (numéro d'aide)", "Savoir où trouver le bouton 'Bloquer'", "Aider une personne victime en lui rappelant ces étapes"]
+      }
+    },
+    {
+      "id": "phishing_cible",
+      "icon": "😎",
+      "title": "Phishing ciblé — Comment les attaquants personnalisent leurs messages",
+      "description": "Déjouez les arnaques sur-mesure en apprenant à reconnaître les signes qui ne trompent pas.",
+      "duration": "5 min",
+      "level": "Intermédiaire",
+      "steps": [
+        {
+          "id": "p1",
+          "type": "question",
+          "message": "Bonjour ! Vous connaissez le 'phishing' classique, ce filet lancé au hasard. Mais les pirates sont plus malins : ils chassent au harpon. C'est le phishing ciblé (ou spear-phishing), et la cible, c'est vous.",
+          "image_url": "path/to/harpon_vs_filet.jpg",
+          "options": [ { "id": "a", "label": "Comment ça marche ?", "correct": true, "feedback": "" } ],
+          "tip": "Le phishing ciblé utilise des informations personnelles pour paraître plus crédible.",
+          "next": "p2"
+        },
+        {
+          "id": "p2",
+          "type": "question",
+          "message": "Voici Paul. Il a mentionné sur LinkedIn sa participation à un séminaire à Bordeaux. Deux jours plus tard, il reçoit cet email. Il a l'air parfait : il mentionne un vrai événement, le ton est juste, l'expéditeur est connu...",
+          "image_url": "path/to/email_phishing_paul.jpg",
+          "options": [ { "id": "a", "label": "Je vois...", "correct": true, "feedback": "" } ],
+          "tip": "Les pirates scrutent les réseaux sociaux pour collecter des informations sur leurs cibles.",
+          "next": "p3"
+        },
+        {
+          "id": "p3",
+          "type": "question",
+          "message": "Qu'est-ce qui devrait pourtant alerter Paul dans ce mail ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "L'adresse email de l'expéditeur semble un peu bizarre.",
+              "correct": false,
+              "feedback": "Vous avez repéré un excellent indice ! Mais c'est la combinaison de plusieurs éléments qui rend le piège si dangereux. Le cocktail explosif est : Personnalisation + Urgence + Action financière."
+            },
+            {
+              "id": "b",
+              "label": "La demande est très urgente et implique de l'argent.",
+              "correct": false,
+              "feedback": "C'est un signal d'alerte majeur ! Mais c'est la combinaison de plusieurs éléments qui rend le piège si dangereux. Le cocktail explosif est : Personnalisation + Urgence + Action financière."
+            },
+            {
+              "id": "c",
+              "label": "Les deux : l'email bizarre + l'urgence financière.",
+              "correct": true,
+              "feedback": "Bravo, vous avez l'œil d'un expert ! C'est la combinaison des deux qui crée le piège parfait : Personnalisation + Urgence + Action financière."
+            }
+          ],
+          "tip": "Méfiez-vous toujours du trio : personnalisation, urgence et demande financière.",
+          "next": "p4"
+        },
+        {
+          "id": "p4",
+          "type": "question",
+          "message": "Alors, quel est le réflexe qui sauve à 100% dans cette situation ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Répondre au mail pour demander confirmation.",
+              "correct": false,
+              "feedback": "Attention, piège ! Si vous répondez, vous restez en contact avec le pirate. Il ne faut jamais utiliser les informations de contact du message suspect."
+            },
+            {
+              "id": "b",
+              "label": "Appeler la personne sur son numéro de téléphone habituel.",
+              "correct": true,
+              "feedback": "EXCELLENT ! C'est le geste barrière ultime : le contre-appel. Vous utilisez un canal de communication que vous maîtrisez (votre répertoire) pour vérifier l'information."
+            },
+            {
+              "id": "c",
+              "label": "Appeler le numéro indiqué dans la signature du mail.",
+              "correct": false,
+              "feedback": "Attention, piège ! Le numéro dans le mail peut appartenir au pirate. Il ne faut jamais utiliser les informations de contact du message suspect."
+            }
+          ],
+          "tip": "En cas de doute, sortez du canal suspect et utilisez un moyen de contact connu et fiable.",
+          "next": "p5"
+        },
+        {
+          "id": "p5",
+          "type": "question",
+          "message": "Le plan d'action anti-harpon est donc :\n1. VÉRIFIER sans cliquer (en survolant les liens).\n2. FAIRE UN CONTRE-APPEL en cas de doute.\nAucune demande de virement n'est jamais trop urgente pour ne pas mériter ce coup de fil.",
+          "image_url": "path/to/telephone_verification.jpg",
+          "options": [ { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Bien joué, vous êtes maintenant paré contre le phishing ciblé !" } ],
+          "tip": "Le contre-appel est votre meilleure défense contre l'usurpation d'identité.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Les pirates imitent les vrais mails", "Ne jamais cliquer sans vérifier", "Parler si tu as un doute"],
+        "actions": ["Vérifier les liens avant de cliquer", "Prévenir un collègue ou ton support", "Supprimer les mails suspects"]
+      }
+    },
+    {
+      "id": "fuite_de_donnees",
+      "icon": "💧",
+      "title": "Fuite de données — Comprendre les impacts concrets",
+      "description": "Découvrez pourquoi un mot de passe fuité sur un site anodin peut mettre en danger toute votre vie numérique.",
+      "duration": "4 min",
+      "level": "Débutant",
+      "steps": [
+        {
+          "id": "f1",
+          "type": "question",
+          "message": "Imaginez que votre mot de passe est une clé. Que se passe-t-il si vous utilisez la MÊME clé pour votre porte d'entrée, votre voiture, votre boîte aux lettres et votre bureau ?",
+          "image_url": "path/to/cle_unique_serrures.jpg",
+          "options": [ { "id": "a", "label": "Si on vole la clé, tout est accessible.", "correct": true, "feedback": "Exactement !" } ],
+          "tip": "Réutiliser un mot de passe, c'est comme utiliser la même clé pour toutes vos serrures.",
+          "next": "f2"
+        },
+        {
+          "id": "f2",
+          "type": "question",
+          "message": "C'est ça, une fuite de données ! Un pirate récupère votre mot de passe sur un site sans importance, et va l'essayer PARTOUT ailleurs : boîte mail, Amazon, Facebook... Le mot de passe du petit site 'recettes-de-grand-mere.fr' devient la clé de toute votre vie numérique.",
+          "options": [ { "id": "a", "label": "Je comprends le risque...", "correct": true, "feedback": "C'est une habitude très répandue. Mais le vrai danger, c'est si le pirate accède à votre boîte mail. Il peut alors utiliser la fonction 'mot de passe oublié' pour prendre le contrôle de tous vos autres comptes." } ],
+          "image_url": "path/to/pirate_mot_de_passe_oublie.gif",
+          "tip": "Le vrai danger est l'accès à votre boîte mail, la tour de contrôle de votre vie numérique.",
+          "next": "f3"
+        },
+        {
+          "id": "f3",
+          "type": "question",
+          "message": "Maintenant que vous savez que votre mot de passe a fuité, quelle est LA TOUTE PREMIÈRE CHOSE à faire ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Changer le mot de passe sur le site qui a fuité.",
+              "correct": false,
+              "feedback": "C'est une bonne idée, mais pas la plus urgente ! Si le pirate a déjà la clé de votre boîte mail, il peut prendre le contrôle de vos autres comptes. Il faut d'abord sécuriser le centre de contrôle."
+            },
+            {
+              "id": "b",
+              "label": "Changer le mot de passe de ma boîte mail en priorité.",
+              "correct": true,
+              "feedback": "Excellent réflexe ! La boîte mail est la porte d'entrée de tout le reste. C'est la serrure à sécuriser en premier, surtout si vous avez réutilisé le mot de passe."
+            }
+          ],
+          "tip": "En cas de fuite, la priorité absolue est de sécuriser votre adresse e-mail.",
+          "next": "f4"
+        },
+        {
+          "id": "f4",
+          "type": "question",
+          "message": "Voici le plan d'urgence 'Post-Fuite' :\n1. SÉCURISEZ LE COEUR (votre email).\n2. CHANGEZ LES DOUBLONS (tous les sites utilisant ce mot de passe).\n3. ACTIVEZ LE BOUCLIER (l'authentification à deux facteurs).",
+          "image_url": "path/to/2fa_bouclier.jpg",
+          "options": [ { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Ce bouclier (2FA) signifie que même si un voleur a la clé, il lui manque un code unique de votre téléphone pour entrer." } ],
+          "tip": "L'authentification à deux facteurs (2FA) est votre meilleure protection contre le vol de mots de passe.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Changer d'abord le mot de passe de l'email", "Ne jamais réutiliser les mots de passe", "Activer la double authentification (2FA) partout"],
+        "actions": ["Vérifier si vos comptes sont compromis sur haveibeenpwned.com", "Changer vos mots de passe critiques", "Activer la 2FA sur vos comptes principaux (email, banque...)"]
+      }
+    },
+    {
+      "id": "mots_de_passe",
+      "icon": "🔐",
+      "title": "Mots de passe — Créer et gérer de bons mots de passe",
+      "description": "Oubliez les idées reçues ! Apprenez la technique simple et ultra-efficace pour créer des mots de passe inviolables.",
+      "duration": "4 min",
+      "level": "Débutant",
+      "steps": [
+        {
+          "id": "m1",
+          "type": "question",
+          "message": "Regardez ces deux mots de passe. À votre avis, lequel est le plus difficile à pirater pour un ordinateur ?\n\nA: Tr0ub4dour!\nB: cafe cheval batterie correct",
+          "options": [
+            {
+              "id": "a",
+              "label": "A: Tr0ub4dour!",
+              "correct": false,
+              "feedback": "C'est ce que 90% des gens pensent, et pourtant c'est faux ! L'ordinateur d'un pirate devine 'Tr0ub4dour!' en quelques minutes. Les substitutions classiques ('o' par '0') sont les premières qu'ils testent."
+            },
+            {
+              "id": "b",
+              "label": "B: cafe cheval batterie correct",
+              "correct": true,
+              "feedback": "Exactement ! Cela peut paraître contre-intuitif, mais c'est la bonne réponse. Cette phrase de passe prendrait des milliers d'années à être découverte par le même ordinateur."
+            }
+          ],
+          "tip": "La longueur est beaucoup plus importante que la complexité.",
+          "next": "m2"
+        },
+        {
+          "id": "m2",
+          "type": "question",
+          "message": "Pourquoi ? Parce que la sécurité d'un mot de passe vient de sa LONGUEUR. Un mot de passe court et complexe est un petit cadenas. Une phrase de passe est un très gros cadenas.",
+          "image_url": "path/to/cadenas_petit_grand.jpg",
+          "options": [ { "id": "a", "label": "Comment créer une bonne phrase de passe ?", "correct": true, "feedback": "" } ],
+          "tip": "Longueur > complexité. Retenez cette règle d'or.",
+          "next": "m3"
+        },
+        {
+          "id": "m3",
+          "type": "question",
+          "message": "La meilleure technique est donc la phrase de passe : 4 ou 5 mots simples sans lien logique. Regardez autour de vous et choisissez 4 objets. Voilà ! 'stylo-lampe-tapis-chaise'. Facile pour vous, impossible pour une machine.",
+          "image_url": "path/to/creation_phrase_de_passe.gif",
+          "options": [ { "id": "a", "label": "Mais comment retenir tout ça ?", "correct": true, "feedback": "Excellente question. La réponse est : vous ne devez pas le faire." } ],
+          "tip": "4 mots aléatoires valent mieux que n'importe quelle combinaison complexe.",
+          "next": "m4"
+        },
+        {
+          "id": "m4",
+          "type": "question",
+          "message": "La solution est le gestionnaire de mots de passe. C'est un coffre-fort numérique. Vous ne retenez qu'UN SEUL mot de passe maître (votre phrase de passe !), et le gestionnaire crée et stocke tous les autres.",
+          "image_url": "path/to/coffre_fort_mdp.jpg",
+          "options": [ { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Bravo ! Vous avez maintenant toutes les clés pour des mots de passe vraiment robustes." } ],
+          "tip": "Un gestionnaire de mots de passe est le meilleur allié de votre sécurité.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Une phrase de passe est plus forte qu'un mot complexe", "Un mot de passe unique par compte", "Utiliser un gestionnaire de mots de passe"],
+        "actions": ["Créer votre première phrase de passe", "Installer un gestionnaire (ex: Bitwarden, 1Password...)", "Activer la double authentification"]
+      }
+    },
+    {
+      "id": "faux_conseiller",
+      "icon": "🤑",
+      "title": "Faux conseiller bancaire — Arnaques téléphoniques et réflexes à adopter",
+      "description": "Apprenez à déjouer l'arnaque redoutable du faux conseiller bancaire en connaissant leur scénario et le réflexe qui sauve.",
+      "duration": "5 min",
+      "level": "Intermédiaire",
+      "steps": [
+        {
+          "id": "b1",
+          "type": "question",
+          "message": "Le scénario classique : votre téléphone sonne. 'Bonjour, ici le service anti-fraude de votre banque. Nous avons détecté une opération suspecte de 800€ sur votre compte. Avez-vous autorisé cette transaction ?'",
+          "image_url": "path/to/faux_conseiller_call_center.jpg",
+          "options": [ { "id": "a", "label": "Non, bien sûr que non !", "correct": true, "feedback": "Évidemment. La panique monte. Le faux conseiller enchaîne : 'Pas de souci, pour annuler, je viens de vous envoyer un code par SMS. Pouvez-vous me le lire s'il vous plaît ?'" } ],
+          "tip": "L'arnaque commence souvent par un appel inattendu créant un sentiment d'urgence et de peur.",
+          "next": "b2"
+        },
+        {
+          "id": "b2",
+          "type": "question",
+          "message": "Le SMS arrive. Il contient une information capitale, souvent écrite en gras, mais que l'on ne lit pas sous l'effet du stress.",
+          "image_url": "path/to/sms_code_securite.jpg",
+          "options": [ { "id": "a", "label": "Que faire ?", "correct": true, "feedback": "" } ],
+          "tip": "Lisez toujours attentivement les SMS de votre banque, surtout la ligne d'avertissement.",
+          "next": "b3"
+        },
+        {
+          "id": "b3",
+          "type": "question",
+          "message": "Le 'conseiller' est au téléphone, il vous presse... Que faites-vous ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Je lui lis le code, il faut faire vite !",
+              "correct": false,
+              "feedback": "Attention, c'est exactement ce que le pirate veut ! Ce code ne sert pas à ANNULER, mais à AUTORISER une opération (comme ajouter un bénéficiaire). En lui donnant, vous lui donnez les clés."
+            },
+            {
+              "id": "b",
+              "label": "Je raccroche immédiatement.",
+              "correct": true,
+              "feedback": "BRAVO ! Vous venez de déjouer l'arnaque. C'est le seul et unique réflexe à avoir."
+            }
+          ],
+          "tip": "Le réflexe vital : raccrocher. Aucune opération bancaire légitime ne se fait sous la pression par téléphone.",
+          "next": "b4"
+        },
+        {
+          "id": "b4",
+          "type": "question",
+          "message": "La règle d'or : un VRAI conseiller ne vous demandera JAMAIS un mot de passe, un code reçu par SMS, de valider une opération dans l'appli, ou de faire un virement sur un 'compte sécurisé'. JAMAIS.",
+          "image_url": "path/to/stop_icon_regles.jpg",
+          "options": [ { "id": "a", "label": "Et après avoir raccroché ?", "correct": true, "feedback": "Bonne question ! Il faut adopter le bon réflexe." } ],
+          "tip": "Votre banque a déjà toutes les informations. Elle n'a jamais besoin de vos codes secrets.",
+          "next": "b5"
+        },
+        {
+          "id": "b5",
+          "type": "question",
+          "message": "Le plan d'action est simple : \n1. DOUTEZ ET RACCROCHEZ.\n2. NE DONNEZ JAMAIS RIEN (aucun code).\n3. RAPPELEZ vous-même votre banque via un numéro officiel (celui au dos de votre carte ou sur leur site).",
+          "options": [ { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Parfait. Retenez : ne faites jamais confiance à un appel entrant pour une opération sensible. C'est vous qui devez être à l'origine de l'appel." } ],
+          "tip": "C'est vous qui appelez la banque, jamais l'inverse pour une action urgente.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Ne jamais communiquer un code reçu par SMS", "Raccrocher en cas de pression ou de doute", "Rappeler soi-même la banque par un numéro officiel"],
+        "actions": ["Enregistrer le numéro officiel de votre banque", "Activer les notifications de transactions", "Rappeler la banque si un appel ou un message vous paraît suspect"]
+      }
+    }
+  ]
+}
