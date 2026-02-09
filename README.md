@@ -1,37 +1,37 @@
-# Minis modules salariÈs ? Ernest
+# Minis modules salari√©s + utilisateur Ernest
 
-Application web de **modules de formation interactifs** sous forme de chat. L?assistant **Ernest** guide l?utilisateur ‡ travers des parcours (cyberharcËlement, etc.) avec questions, feedbacks et conseils.
+Application web de **modules de formation interactifs** sous forme de chat. L?assistant **Ernest** guide l?utilisateur √† travers des parcours (cyberharc√®lement, etc.) avec questions, feedbacks et conseils.
 
 ---
 
 ## Ce que fait le projet
 
 - **Interface type chat** avec l?assistant Ernest
-- **Modules thÈmatiques** dÈfinis dans `src/data/modules.json` (durÈe, Ètapes, questions ‡ choix)
-- **Suivi de progression** et rÈsumÈ en fin de module
-- **ContrÙles d?accessibilitÈ** (taille du texte, contraste)
+- **Modules th√©matiques** d√©finis dans `src/data/modules.json` (dur√©e, √©tapes, questions √† choix)
+- **Suivi de progression** et r√©sum√© en fin de module
+- **Contr√¥les d?accessibilit√©** (taille du texte, contraste)
 - Stack : **React**, **TypeScript**, **Vite**, **Tailwind CSS**, **Radix UI** (shadcn)
 
 ---
 
-## PrÈrequis
+## Pr√©requis
 
-- **Node.js** 18 ou plus (recommandÈ : LTS)  
-  VÈrifier : `node -v`
-- **npm** (livrÈ avec Node)  
-  VÈrifier : `npm -v`
+- **Node.js** 18 ou plus (recommand√© : LTS)  
+  V√©rifier : `node -v`
+- **npm** (livr√© avec Node)  
+  V√©rifier : `npm -v`
 
 ---
 
 ## Installation
 
-1. **Cloner le dÈpÙt** (si ce n?est pas dÈj‡ fait) :
+1. **Cloner le d√©p√¥t** (si ce n?est pas d√©j√† fait) :
    ```bash
    git clone git@github.com:clic-et-moi/Minis_modules_salaries_demo.git
    cd Minis_modules_salaries_demo
    ```
 
-2. **Installer les dÈpendances** :
+2. **Installer les d√©pendances** :
    ```bash
    npm install
    ```
@@ -40,19 +40,19 @@ Application web de **modules de formation interactifs** sous forme de chat. L?as
 
 ## Lancer le projet
 
-- **Mode dÈveloppement** (avec rechargement ‡ chaud) :
+- **Mode d√©veloppement** (avec rechargement √† chaud) :
   ```bash
   npm run dev
   ```
-  Puis ouvrir l?URL affichÈe (souvent `http://localhost:5173`).
+  Puis ouvrir l?URL affich√©e (souvent `http://localhost:5173`).
 
 - **Build de production** :
   ```bash
   npm run build
   ```
-  Les fichiers sont gÈnÈrÈs dans le dossier `dist/`.
+  Les fichiers sont g√©n√©r√©s dans le dossier `dist/`.
 
-- **PrÈvisualiser le build** :
+- **Pr√©visualiser le build** :
   ```bash
   npm run preview
   ```
@@ -66,10 +66,10 @@ Application web de **modules de formation interactifs** sous forme de chat. L?as
 
 ## Structure utile
 
-| Dossier / Fichier      | RÙle |
+| Dossier / Fichier      | R√¥le |
 |------------------------|------|
-| `src/components/ernest/` | Composants du chat Ernest (accueil, menu modules, conversation, rÈsumÈ) |
-| `src/data/modules.json`  | DÈfinition des modules et de leurs Ètapes |
+| `src/components/ernest/` | Composants du chat Ernest (accueil, menu modules, conversation, r√©sum√©) |
+| `src/data/modules.json`  | D√©finition des modules et de leurs √©tapes |
 | `src/pages/Index.tsx`    | Page principale qui affiche Ernest |
 | `src/types/ernest.ts`    | Types TypeScript du module Ernest |
 
@@ -77,4 +77,4 @@ Application web de **modules de formation interactifs** sous forme de chat. L?as
 
 ## Licence
 
-Projet Clic et Moi ? Minis modules salariÈs.
+Projet Clic et Moi ? Minis modules salari√©s.
