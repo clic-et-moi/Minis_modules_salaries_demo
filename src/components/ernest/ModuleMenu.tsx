@@ -1,6 +1,6 @@
 import { Module, Progress } from '@/types/ernest';
-import { Check, Users, ShieldAlert, Lock, Shield, AlertTriangle, MessageCircle, Smartphone } from 'lucide-react';
-import { Card } from '../ui';
+import { Check, Users, ShieldAlert, Lock, Shield, AlertTriangle, MessageCircle, Smartphone, Sparkles } from 'lucide-react';
+import { Card, ProBadge } from '../ui';
 
 interface ModuleMenuProps {
   modules: Module[];
@@ -94,6 +94,10 @@ export const ModuleMenu = ({
                 case 'faux_conseiller':
                 case 'faux_banque':
                   return <Smartphone className="w-6 h-6 text-green-500" />;
+                case 'pro_module_1':
+                case 'pro_module_2':
+                case 'pro_module_3':
+                  return <Sparkles className="w-6 h-6 text-amber-500" />;
                 default:
                   return <MessageCircle className="w-6 h-6 text-gray-500" />;
               }
@@ -125,10 +129,15 @@ export const ModuleMenu = ({
                     <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 rounded-lg bg-primary/10 text-primary">
                       {getModuleIcon(module.id)}
                     </div>
-                    <div className="flex-1 min-w-0 overflow-hidden">
-                      <h3 className="font-semibold text-sm xs:text-base sm:text-lg text-foreground leading-tight line-clamp-2 break-words">
-                        {module.title}
-                      </h3>
+                    <div className="flex-1 min-w-0 overflow-hidden flex flex-col gap-1">
+                      <div className="flex items-center gap-2 flex-wrap min-w-0">
+                        <h3 className="font-semibold text-sm xs:text-base sm:text-lg text-foreground leading-tight line-clamp-2 break-words">
+                          {module.title}
+                        </h3>
+                        {module.tag === 'PRO' && (
+                          <ProBadge size="sm" className="flex-shrink-0" />
+                        )}
+                      </div>
                     </div>
                     {isCompleted && (
                       <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">

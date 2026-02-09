@@ -16,9 +16,10 @@ const Index = () => {
 
   return (
     <div className="ernest-app flex-1 w-full min-w-0 max-w-full overflow-x-hidden flex flex-col min-h-[100dvh]">
+      {/* hasProAccess : passer true quand project_id Xano donne accès PRO */}
       <ErnestCyberChat
+        hasProAccess={true}
         onEvent={(event) => {
-          // Optional: handle events in parent component
           console.log('Ernest event from prop:', event);
         }}
       />

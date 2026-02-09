@@ -1,18 +1,28 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { ErnestCyberChatProps, ErnestState, ConversationMessage, Module, Step } from '@/types/ernest';
 import { useErnestProgress } from '@/hooks/useErnestProgress';
 import defaultModulesData from '@/data/modules.json';
+import proModulesData from '@/data/modules-pro.json';
 import { WelcomeScreen } from './WelcomeScreen';
 import { ModuleMenu } from './ModuleMenu';
 import { ChatInterface } from './ChatInterface';
 import { ModuleSummary } from './ModuleSummary';
 
+const baseModules = defaultModulesData.modules as Module[];
+const proModules = proModulesData.modules as Module[];
+
 export const ErnestCyberChat = ({
   modules: customModules,
+  hasProAccess = false,
   theme,
   onEvent,
 }: ErnestCyberChatProps) => {
-  const modules = (customModules || defaultModulesData.modules) as Module[];
+  const modules = useMemo(() => {
+    if (customModules) return customModules;
+    return hasProAccess
+      ? [...baseModules, ...proModules]
+      : baseModules;
+  }, [customModules, hasProAccess]);
   const progressHook = useErnestProgress();
 
   const [state, setState] = useState<ErnestState>({

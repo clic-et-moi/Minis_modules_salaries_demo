@@ -28,6 +28,7 @@ export interface Module {
   duration: string;
   level: string;
   description?: string;
+  tag?: 'classic' | 'PRO';
   steps: Step[];
   summary: ModuleSummary;
 }
@@ -65,6 +66,8 @@ export interface ConversationMessage {
 
 export interface ErnestCyberChatProps {
   modules?: Module[];
+  /** Si true, les modules PRO (modules-pro.json) sont ajoutés. À renseigner selon le project_id Xano. */
+  hasProAccess?: boolean;
   theme?: {
     primary?: string;
     radius?: number;

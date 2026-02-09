@@ -1,0 +1,111 @@
+{
+  "modules": [
+    {
+      "id": "pro_module_1",
+      "icon": "⚡",
+      "tag": "PRO",
+      "title": "Lorem Ipsum — Premier module PRO",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "duration": "6 min",
+      "level": "Intermédiaire",
+      "steps": [
+        {
+          "id": "pro1_s1",
+          "type": "question",
+          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          "options": [
+            { "id": "a", "label": "Lorem option A", "correct": true, "feedback": "Lorem feedback." },
+            { "id": "b", "label": "Lorem option B", "correct": false, "feedback": "Lorem feedback." }
+          ],
+          "tip": "Lorem tip.",
+          "next": "pro1_s2"
+        },
+        {
+          "id": "pro1_s2",
+          "type": "question",
+          "message": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "options": [
+            { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Lorem résumé." }
+          ],
+          "tip": "Lorem tip.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Lorem keypoint 1", "Lorem keypoint 2"],
+        "actions": ["Lorem action 1", "Lorem action 2"]
+      }
+    },
+    {
+      "id": "pro_module_2",
+      "icon": "🎯",
+      "tag": "PRO",
+      "title": "Lorem Ipsum — Deuxième module PRO",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "duration": "5 min",
+      "level": "Débutant",
+      "steps": [
+        {
+          "id": "pro2_s1",
+          "type": "question",
+          "message": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "options": [
+            { "id": "a", "label": "C'est parti", "correct": true, "feedback": "" }
+          ],
+          "tip": "Lorem tip.",
+          "next": "pro2_s2"
+        },
+        {
+          "id": "pro2_s2",
+          "type": "question",
+          "message": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "options": [
+            { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Bravo." }
+          ],
+          "tip": "Lorem tip.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Lorem keypoint 1", "Lorem keypoint 2", "Lorem keypoint 3"],
+        "actions": ["Lorem action 1"]
+      }
+    },
+    {
+      "id": "pro_module_3",
+      "icon": "🔒",
+      "tag": "PRO",
+      "title": "Lorem Ipsum — Troisième module PRO",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
+      "duration": "7 min",
+      "level": "Avancé",
+      "steps": [
+        {
+          "id": "pro3_s1",
+          "type": "question",
+          "message": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "options": [
+            { "id": "a", "label": "Lorem A", "correct": true, "feedback": "" },
+            { "id": "b", "label": "Lorem B", "correct": false, "feedback": "Lorem." }
+          ],
+          "tip": "Lorem tip.",
+          "next": "pro3_s2"
+        },
+        {
+          "id": "pro3_s2",
+          "type": "question",
+          "message": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.",
+          "options": [
+            { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Lorem fin." }
+          ],
+          "tip": "Lorem tip.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": ["Lorem keypoint 1", "Lorem keypoint 2"],
+        "actions": ["Lorem action 1", "Lorem action 2"]
+      }
+    }
+  ]
+}
