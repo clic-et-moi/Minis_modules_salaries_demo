@@ -1,7 +1,5 @@
 {
   "modules": [
-
-    // DDOS pannes services
     {
       "id": "ddos_pannes_services",
       "icon": "🔒",
@@ -168,10 +166,7 @@
         ]
       }
     },
-
-
-    // Fraude au PDG
-    {
+    { 
       "id": "fraude_pdg",
       "icon": ":necktie:",
       "tag": "PRO",
@@ -349,8 +344,8 @@
       }
     },
 
-//RGPD bases
 
+    
     {
       "id": "rgpd_bases",
       "icon": "",
