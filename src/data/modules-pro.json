@@ -1,110 +1,531 @@
 {
   "modules": [
+
+    // DDOS pannes services
     {
-      "id": "pro_module_1",
-      "icon": "⚡",
-      "tag": "PRO",
-      "title": "Lorem Ipsum — Premier module PRO",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "duration": "6 min",
-      "level": "Intermédiaire",
-      "steps": [
-        {
-          "id": "pro1_s1",
-          "type": "question",
-          "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-          "options": [
-            { "id": "a", "label": "Lorem option A", "correct": true, "feedback": "Lorem feedback." },
-            { "id": "b", "label": "Lorem option B", "correct": false, "feedback": "Lorem feedback." }
-          ],
-          "tip": "Lorem tip.",
-          "next": "pro1_s2"
-        },
-        {
-          "id": "pro1_s2",
-          "type": "question",
-          "message": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "options": [
-            { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Lorem résumé." }
-          ],
-          "tip": "Lorem tip.",
-          "next": null
-        }
-      ],
-      "summary": {
-        "keypoints": ["Lorem keypoint 1", "Lorem keypoint 2"],
-        "actions": ["Lorem action 1", "Lorem action 2"]
-      }
-    },
-    {
-      "id": "pro_module_2",
-      "icon": "🎯",
-      "tag": "PRO",
-      "title": "Lorem Ipsum — Deuxième module PRO",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "duration": "5 min",
-      "level": "Débutant",
-      "steps": [
-        {
-          "id": "pro2_s1",
-          "type": "question",
-          "message": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "options": [
-            { "id": "a", "label": "C'est parti", "correct": true, "feedback": "" }
-          ],
-          "tip": "Lorem tip.",
-          "next": "pro2_s2"
-        },
-        {
-          "id": "pro2_s2",
-          "type": "question",
-          "message": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-          "options": [
-            { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Bravo." }
-          ],
-          "tip": "Lorem tip.",
-          "next": null
-        }
-      ],
-      "summary": {
-        "keypoints": ["Lorem keypoint 1", "Lorem keypoint 2", "Lorem keypoint 3"],
-        "actions": ["Lorem action 1"]
-      }
-    },
-    {
-      "id": "pro_module_3",
+      "id": "ddos_pannes_services",
       "icon": "🔒",
       "tag": "PRO",
-      "title": "Lorem Ipsum — Troisième module PRO",
-      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
-      "duration": "7 min",
-      "level": "Avancé",
+      "title": "Panne massive en ligne — Comprendre une attaque DDoS et réagir",
+      "description": "Quand un service essentiel tombe en panne, apprenez à analyser la situation, éviter les pièges et adopter les bons réflexes numériques.",
+      "duration": "4 min",
+      "level": "Intermédiaire / Avancé",
       "steps": [
         {
-          "id": "pro3_s1",
+          "id": "d2",
           "type": "question",
-          "message": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "message": "C'est exactement ce qui est arrivé lors d'une cyberattaque visant un grand service public français. Sites web, applications et banque en ligne étaient hors service pendant plusieurs heures.\n\nÀ votre avis, quel était l'objectif principal de l'attaque ?",
           "options": [
-            { "id": "a", "label": "Lorem A", "correct": true, "feedback": "" },
-            { "id": "b", "label": "Lorem B", "correct": false, "feedback": "Lorem." }
+            {
+              "id": "a",
+              "label": "Voler les données des clients.",
+              "correct": false,
+              "feedback": "C'est une crainte fréquente, mais ce n'était pas le but ici."
+            },
+            {
+              "id": "b",
+              "label": "Empêcher les services de fonctionner.",
+              "correct": true,
+              "feedback": "Exact. Le but était de bloquer l'accès aux services, pas de voler des données."
+            }
           ],
-          "tip": "Lorem tip.",
-          "next": "pro3_s2"
+          "tip": "Toutes les cyberattaques ne visent pas le vol d'informations.",
+          "next": "d3"
         },
         {
-          "id": "pro3_s2",
+          "id": "d3",
           "type": "question",
-          "message": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.",
+          "message": "On parle ici d'une attaque appelée DDoS.\n\nPetit rappel : que signifie DDoS ?",
           "options": [
-            { "id": "a", "label": "Terminer le module", "correct": true, "feedback": "Lorem fin." }
+            {
+              "id": "a",
+              "label": "Déni de Service Distribué",
+              "correct": true,
+              "feedback": "Exact. Le service est submergé de demandes jusqu'à ne plus répondre."
+            },
+            {
+              "id": "b",
+              "label": "Destruction de Données sur Serveur",
+              "correct": false,
+              "feedback": "Non. Les données ne sont pas détruites dans une attaque DDoS."
+            }
           ],
-          "tip": "Lorem tip.",
+          "tip": "Une attaque DDoS fonctionne par saturation, pas par intrusion.",
+          "next": "d4"
+        },
+        {
+          "id": "d4",
+          "type": "question",
+          "message": "Niveau avancé \n\nUne attaque DDoS repose souvent sur des milliers d'ordinateurs infectés, appelés un « botnet », qui envoient des requêtes en même temps.\n\nPourquoi est-ce si difficile à bloquer ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Parce que les demandes ressemblent à de vraies connexions.",
+              "correct": true,
+              "feedback": "Exactement. Le trafic paraît légitime, ce qui complique le filtrage."
+            },
+            {
+              "id": "b",
+              "label": "Parce que les serveurs sont mal protégés.",
+              "correct": false,
+              "feedback": "Même bien protégés, les serveurs peuvent être saturés."
+            }
+          ],
+          "tip": "Une attaque DDoS imite un usage normal, mais à très grande échelle.",
+          "next": "d5"
+        },
+        {
+          "id": "d5",
+          "type": "question",
+          "message": "Pendant cette attaque, certains services continuaient pourtant de fonctionner.\n\nLequel, à votre avis ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Les distributeurs automatiques de billets (DAB).",
+              "correct": true,
+              "feedback": "Bonne réponse. Les systèmes physiques sont souvent séparés."
+            },
+            {
+              "id": "b",
+              "label": "La banque en ligne.",
+              "correct": false,
+              "feedback": "Non, elle était justement indisponible."
+            }
+          ],
+          "tip": "Tous les services ne reposent pas sur la même infrastructure.",
+          "next": "d6"
+        },
+        {
+          "id": "d6",
+          "type": "question",
+          "message": "Lors des pannes, des messages circulent : emails, SMS, notifications.\n\nLequel de ces messages doit vous alerter immédiatement ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Un message qui informe d'une panne sans demander d'action.",
+              "correct": false,
+              "feedback": "Ce type de message peut être légitime."
+            },
+            {
+              "id": "b",
+              "label": "Un message qui demande vos identifiants ou un clic urgent.",
+              "correct": true,
+              "feedback": "Exact. C'est un signal clair de phishing."
+            }
+          ],
+          "tip": "Une entreprise sérieuse ne demande jamais vos codes par message.",
+          "next": "d7"
+        },
+        {
+          "id": "d7",
+          "type": "question",
+          "message": "Dernière question, la plus importante.\n\nSi un service essentiel est indisponible et que vous soupçonnez une cyberattaque, quel est le meilleur réflexe ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Réessayer sans cesse et cliquer sur des liens trouvés en ligne.",
+              "correct": false,
+              "feedback": "Cela augmente les risques et n'aide pas à résoudre le problème."
+            },
+            {
+              "id": "b",
+              "label": "Prévenir l'IT ou attendre les informations officielles.",
+              "correct": true,
+              "feedback": "Parfait. C'est la réaction la plus sûre et la plus efficace."
+            }
+          ],
+          "tip": "Votre vigilance fait partie de la sécurité globale.",
+          "next": "d8"
+        },
+        {
+          "id": "d8",
+          "type": "question",
+          "message": "Pour résumer :\n\n1. Je comprends que la panne peut être une attaque\n2. Je ne cède pas à la panique\n3. Je me méfie des messages reçus\n4. Je préviens les bonnes personnes\n\nVous venez d'acquérir des réflexes numériques avancés. Bravo ",
+          "options": [
+            {
+              "id": "a",
+              "label": "Terminer le module",
+              "correct": true,
+              "feedback": "Félicitations ! Vous êtes désormais mieux armé face aux pannes et cyberattaques."
+            }
+          ],
+          "tip": "Comprendre = moins de stress, plus de contrôle.",
           "next": null
         }
       ],
       "summary": {
-        "keypoints": ["Lorem keypoint 1", "Lorem keypoint 2"],
-        "actions": ["Lorem action 1", "Lorem action 2"]
+        "keypoints": [
+          "Une attaque DDoS bloque sans voler",
+          "Les pannes peuvent être intentionnelles",
+          "Le phishing augmente pendant les crises",
+          "Tous les services ne tombent pas en même temps",
+          "Prévenir l'IT est un réflexe clé"
+        ],
+        "actions": [
+          "Ne jamais cliquer dans l'urgence",
+          "Vérifier les sources officielles",
+          "Expliquer ces réflexes à un proche ou collègue"
+        ]
+      }
+    },
+
+
+    // Fraude au PDG
+    {
+      "id": "fraude_pdg",
+      "icon": ":necktie:",
+      "tag": "PRO",
+      "title": "Fraude au PDG — Reconnaître la manipulation et éviter le piège",
+      "description": "Apprenez à identifier la fraude au PDG, comprendre ses mécanismes psychologiques et adopter les bons réflexes pour ne pas tomber dans le piège.",
+      "duration": "4 min",
+      "level": "Intermédiaire / Avancé",
+      "steps": [
+        {
+          "id": "f1",
+          "type": "question",
+          "message": "Imaginez : il est 16h45. Vous recevez un email de votre directeur ou présidente. Ton pressé. Message court.\n\n« J'ai besoin que tu fasses un virement URGENT. Je suis en réunion, ne m'appelle pas. »\n\nQue ressentez-vous en premier ?",
+          "options": [
+            { "id": "a", "label": "Du stress et de la pression.", "correct": true, "feedback": "" },
+            { "id": "b", "label": "Aucun souci, c'est habituel.", "correct": false, "feedback": "" }
+          ],
+          "tip": "La fraude au PDG commence presque toujours par une mise sous pression.",
+          "next": "f2"
+        },
+        {
+          "id": "f2",
+          "type": "question",
+          "message": "Ce scénario porte un nom : la fraude au PDG.\n\nÀ votre avis, quel est l'objectif principal de cette fraude ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Pirater les ordinateurs de l'entreprise.",
+              "correct": false,
+              "feedback": "Ce n'est pas une attaque technique à la base."
+            },
+            {
+              "id": "b",
+              "label": "Manipuler une personne pour obtenir un virement ou des informations.",
+              "correct": true,
+              "feedback": "Exact. La fraude au PDG repose sur la manipulation humaine."
+            }
+          ],
+          "tip": "Le maillon faible n'est pas l'ordinateur, mais la confiance.",
+          "next": "f3"
+        },
+        {
+          "id": "f3",
+          "type": "question",
+          "message": "Les fraudeurs se font passer pour un dirigeant, un responsable ou un partenaire.\n\nQuel levier utilisent-ils presque toujours ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "La hiérarchie et l'urgence.",
+              "correct": true,
+              "feedback": "Exact. L'autorité + l'urgence empêchent de réfléchir."
+            },
+            {
+              "id": "b",
+              "label": "Des compétences techniques avancées.",
+              "correct": false,
+              "feedback": "Ce n'est pas nécessaire dans ce type de fraude."
+            }
+          ],
+          "tip": "« Fais-le vite » est un signal d'alerte majeur.",
+          "next": "f4"
+        },
+        {
+          "id": "f4",
+          "type": "question",
+          "message": "Niveau avancé \n\nPourquoi la fraude au PDG fonctionne-t-elle si bien, même dans des structures organisées ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Parce qu'elle exploite les réflexes humains : obéir, aider, ne pas déranger.",
+              "correct": true,
+              "feedback": "Exact. Elle joue sur la psychologie, pas sur la technique."
+            },
+            {
+              "id": "b",
+              "label": "Parce que les employés manquent de bonne volonté.",
+              "correct": false,
+              "feedback": "Au contraire, c'est souvent la volonté de bien faire qui est exploitée."
+            }
+          ],
+          "tip": "La fraude au PDG cible les personnes fiables et impliquées.",
+          "next": "f5"
+        },
+        {
+          "id": "f5",
+          "type": "question",
+          "message": "Un détail important : les fraudeurs préparent souvent leur attaque.\n\nQuelle information est fréquemment utilisée pour rendre le message crédible ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Des informations publiques : noms, fonctions, signatures.",
+              "correct": true,
+              "feedback": "Exact. LinkedIn et les sites web sont souvent suffisants."
+            },
+            {
+              "id": "b",
+              "label": "Des mots de passe internes.",
+              "correct": false,
+              "feedback": "Ce n'est pas indispensable pour cette fraude."
+            }
+          ],
+          "tip": "Ce qui est public peut être utilisé contre vous.",
+          "next": "f6"
+        },
+        {
+          "id": "f6",
+          "type": "question",
+          "message": "Vous recevez un email urgent au nom du PDG.\n\nQuel est LE bon réflexe immédiat ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Exécuter la demande pour ne pas prendre de risque.",
+              "correct": false,
+              "feedback": "C'est exactement ce que cherche le fraudeur."
+            },
+            {
+              "id": "b",
+              "label": "Vérifier par un autre canal avant toute action.",
+              "correct": true,
+              "feedback": "Parfait. La vérification casse la fraude."
+            }
+          ],
+          "tip": "Un appel ou un message interne vaut mieux qu'un virement.",
+          "next": "f7"
+        },
+        {
+          "id": "f7",
+          "type": "question",
+          "message": "À qui faut-il signaler une tentative de fraude au PDG, même si aucun argent n'a été envoyé ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Personne, tant qu'il n'y a pas de perte.",
+              "correct": false,
+              "feedback": "Le silence permet aux fraudeurs de recommencer."
+            },
+            {
+              "id": "b",
+              "label": "Le service IT ou sécurité immédiatement.",
+              "correct": true,
+              "feedback": "Exact. Cela permet de protéger toute l'organisation."
+            }
+          ],
+          "tip": "Signaler protège aussi vos collègues.",
+          "next": "f8"
+        },
+        {
+          "id": "f8",
+          "type": "question",
+          "message": "Pour résumer la fraude au PDG :\n\n1. Je me méfie de l'urgence\n2. Je vérifie par un autre canal\n3. Je n'agis jamais seul\n4. Je signale immédiatement\n\nVous venez d'acquérir des réflexes avancés contre une fraude redoutablement efficace.",
+          "options": [
+            {
+              "id": "a",
+              "label": "Terminer le module",
+              "correct": true,
+              "feedback": "Bravo ! Vous êtes désormais beaucoup plus difficile à manipuler."
+            }
+          ],
+          "tip": "Le doute est une force, pas une faiblesse.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": [
+          "La fraude au PDG est une manipulation humaine",
+          "L'urgence est un signal d'alerte",
+          "Les fraudeurs utilisent des infos publiques",
+          "Vérifier par un autre canal est essentiel",
+          "Signaler protège toute l'organisation"
+        ],
+        "actions": [
+          "Toujours ralentir face à une demande urgente",
+          "Vérifier par téléphone ou en interne",
+          "Partager ces réflexes avec ses collègues"
+        ]
+      }
+    },
+
+//RGPD bases
+
+    {
+      "id": "rgpd_bases",
+      "icon": "",
+      "tag": "PRO",
+      "title": "RGPD — Les bases pour manipuler des données sans risque",
+      "description": "Comprendre les principes essentiels du RGPD et adopter les bons réflexes quand vous traitez ou partagez des données personnelles.",
+      "duration": "7 min",
+      "level": "Intermédiaire / Avancé",
+      "steps": [
+        {
+          "id": "r1",
+          "type": "question",
+          "message": "Imaginez : vous travaillez sur un fichier Excel avec des noms, des emails et des numéros de téléphone. Vous devez l'envoyer à un collègue ou à un prestataire.\n\nAvant d'agir, que ressentez-vous ?",
+          "options": [
+            { "id": "a", "label": "Un léger doute : ai-je le droit ?", "correct": true, "feedback": "" },
+            { "id": "b", "label": "Aucun problème, je l'envoie.", "correct": false, "feedback": "" }
+          ],
+          "tip": "Le RGPD commence souvent par une simple question : « Est-ce nécessaire ? »",
+          "next": "r2"
+        },
+        {
+          "id": "r2",
+          "type": "question",
+          "message": "Petit rappel : selon le RGPD, qu'est-ce qu'une donnée personnelle ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Uniquement les données bancaires.",
+              "correct": false,
+              "feedback": "C'est plus large que cela."
+            },
+            {
+              "id": "b",
+              "label": "Toute information permettant d'identifier une personne.",
+              "correct": true,
+              "feedback": "Exact. Un nom, un email ou même une photo sont des données personnelles."
+            }
+          ],
+          "tip": "Si on peut reconnaître quelqu'un, c'est une donnée personnelle.",
+          "next": "r3"
+        },
+        {
+          "id": "r3",
+          "type": "question",
+          "message": "Vous gérez une base de données clients ou bénéficiaires.\n\nQuel est le premier principe fondamental du RGPD à respecter ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Collecter le plus de données possible.",
+              "correct": false,
+              "feedback": "C'est justement l'inverse."
+            },
+            {
+              "id": "b",
+              "label": "Ne collecter que les données vraiment utiles.",
+              "correct": true,
+              "feedback": "Exact. C'est le principe de minimisation."
+            }
+          ],
+          "tip": "Moins de données = moins de risques.",
+          "next": "r4"
+        },
+        {
+          "id": "r4",
+          "type": "question",
+          "message": "Niveau avancé \n\nVous souhaitez envoyer un fichier contenant des données personnelles à un collègue.\n\nQuelle condition doit être remplie pour que ce soit conforme au RGPD ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Le collègue en a réellement besoin pour son travail.",
+              "correct": true,
+              "feedback": "Exact. L'accès aux données doit être justifié."
+            },
+            {
+              "id": "b",
+              "label": "Il est dans la même entreprise.",
+              "correct": false,
+              "feedback": "Être collègue ne suffit pas."
+            }
+          ],
+          "tip": "Le RGPD s'applique aussi en interne.",
+          "next": "r5"
+        },
+        {
+          "id": "r5",
+          "type": "question",
+          "message": "Et si vous devez transmettre ces données à un fournisseur ou prestataire externe ?\n\nQuelle est la bonne pratique ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Envoyer le fichier par email sans précaution.",
+              "correct": false,
+              "feedback": "C'est risqué et non conforme."
+            },
+            {
+              "id": "b",
+              "label": "S'assurer qu'un cadre contractuel et sécurisé existe.",
+              "correct": true,
+              "feedback": "Exact. Le prestataire doit être encadré et sécurisé."
+            }
+          ],
+          "tip": "Un prestataire devient responsable des données qu'il traite.",
+          "next": "r6"
+        },
+        {
+          "id": "r6",
+          "type": "question",
+          "message": "Autre point clé du RGPD : la sécurité.\n\nQuel comportement est le plus conforme ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Partager les fichiers via des outils sécurisés.",
+              "correct": true,
+              "feedback": "Parfait. La sécurité est une obligation."
+            },
+            {
+              "id": "b",
+              "label": "Utiliser sa messagerie personnelle pour aller plus vite.",
+              "correct": false,
+              "feedback": "La rapidité ne justifie pas le risque."
+            }
+          ],
+          "tip": "La sécurité des données fait partie de votre responsabilité.",
+          "next": "r7"
+        },
+        {
+          "id": "r7",
+          "type": "question",
+          "message": "Dernière question essentielle.\n\nSi vous constatez une erreur : fichier envoyé à la mauvaise personne, perte de données… que devez-vous faire ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Espérer que personne ne s'en rende compte.",
+              "correct": false,
+              "feedback": "Le silence aggrave les situations."
+            },
+            {
+              "id": "b",
+              "label": "Signaler immédiatement l'incident.",
+              "correct": true,
+              "feedback": "Exact. Le RGPD impose la transparence."
+            }
+          ],
+          "tip": "Un incident signalé à temps peut être maîtrisé.",
+          "next": "r8"
+        },
+        {
+          "id": "r8",
+          "type": "question",
+          "message": "Pour résumer le RGPD au quotidien :\n\n1. Je collecte seulement l'utile\n2. Je partage uniquement si c'est nécessaire\n3. Je sécurise les envois\n4. Je signale les erreurs\n\nVous venez d'acquérir des réflexes solides pour manipuler des données personnelles en toute confiance.",
+          "options": [
+            {
+              "id": "a",
+              "label": "Terminer le module",
+              "correct": true,
+              "feedback": "Bravo ! Vous maîtrisez désormais les bases essentielles du RGPD."
+            }
+          ],
+          "tip": "Le RGPD n'empêche pas de travailler, il aide à mieux travailler.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": [
+          "Une donnée personnelle identifie une personne",
+          "Collecter uniquement ce qui est nécessaire",
+          "Le RGPD s'applique aussi en interne",
+          "Les prestataires doivent être encadrés",
+          "La sécurité et la transparence sont essentielles"
+        ],
+        "actions": [
+          "Se poser la question de l'utilité avant chaque partage",
+          "Utiliser des outils sécurisés",
+          "Signaler toute erreur ou incident rapidement"
+        ]
       }
     }
   ]
