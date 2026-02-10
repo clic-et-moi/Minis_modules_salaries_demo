@@ -54,7 +54,7 @@
         {
           "id": "d4",
           "type": "question",
-          "message": "Niveau avancé \n\nUne attaque DDoS repose souvent sur des milliers d'ordinateurs infectés, appelés un « botnet », qui envoient des requêtes en même temps.\n\nPourquoi est-ce si difficile à bloquer ?",
+          "message": "Une attaque DDoS repose souvent sur des milliers d'ordinateurs infectés, appelés un « botnet », qui envoient des requêtes en même temps.\n\nPourquoi est-ce si difficile à bloquer ?",
           "options": [
             {
               "id": "a",
@@ -231,7 +231,7 @@
         {
           "id": "f4",
           "type": "question",
-          "message": "Niveau avancé \n\nPourquoi la fraude au PDG fonctionne-t-elle si bien, même dans des structures organisées ?",
+          "message": "Pourquoi la fraude au PDG fonctionne-t-elle si bien, même dans des structures organisées ?",
           "options": [
             {
               "id": "a",
@@ -411,7 +411,7 @@
         {
           "id": "r4",
           "type": "question",
-          "message": "Niveau avancé \n\nVous souhaitez envoyer un fichier contenant des données personnelles à un collègue.\n\nQuelle condition doit être remplie pour que ce soit conforme au RGPD ?",
+          "message": "Vous souhaitez envoyer un fichier contenant des données personnelles à un collègue.\n\nQuelle condition doit être remplie pour que ce soit conforme au RGPD ?",
           "options": [
             {
               "id": "a",
