@@ -350,7 +350,7 @@
               "id": "a",
               "label": "Uniquement les données bancaires.",
               "correct": false,
-              "feedback": "C’est bien plus large que cela. Cela englobe toutes les informations permettant d’identifier une personne."
+              "feedback": "C’est bien plus large que cela. Le RGPD englobe toutes les informations permettant d’identifier une personne."
             },
             {
               "id": "b",
