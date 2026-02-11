@@ -278,8 +278,56 @@
             }
           ],
           "tip": "Signaler protège aussi vos collègues.",
-          "next": "f8"
+          "next": "f7b1"
         },
+        {
+          "id": "f7b1",
+          "type": "question",
+          "message": "La fraude au PDG est-elle le seul type de fraude par usurpation d’identité ?",
+          "options": [
+          {
+          "id": "a",
+          "label": "Oui, c’est le principal et unique scénario.",
+          "correct": false,
+          "feedback": "Non. Il existe de nombreuses variantes basées sur la même manipulation."
+          },
+          {
+          "id": "b",
+          "label": "Non, il existe d'autres fraudes similaires.",
+          "correct": true,
+          "feedback": "Exact. La fraude au PDG n’est qu’une forme parmi d’autres."
+          }
+          ],
+          "tip": "Le principe reste le même : jouer sur la confiance.",
+          "next": "f7b2"
+          },
+          {
+          "id": "f7b2",
+          "type": "question",
+          "message": "Parmi ces exemples, lesquels sont aussi des fraudes par usurpation d’identité ?",
+          "options": [
+          {
+          "id": "a",
+          "label": "Un collègue qui demande un virement urgent inhabituel.",
+          "correct": false,
+          "feedback": "En réalité, cela peut être aussi une fraude si l'identité est usurpée."
+          },
+          {
+          "id": "b",
+          "label": "Un proche qui vous demande de l'argent via un nouveau numéro ou compte.",
+          "correct": false,
+          "feedback": "Cela peut également être une arnaque si l'identité est imitée."
+          },
+          {
+          "id": "c",
+          "label": "Ces deux situations peuvent être des fraudes.",
+          "correct": true,
+          "feedback": "Exact. Fraude au collègue, fraude au faux ami, faux fournisseur… le principe est toujours l’usurpation et l’urgence."
+          }
+          ],
+          "tip": "Peu importe le rôle joué : PDG, collègue, ami… le mécanisme reste la manipulation.",
+          "next": "f8"
+          },
         {
           "id": "f8",
           "type": "question",
@@ -307,7 +355,9 @@
         "actions": [
           "Toujours ralentir face à une demande urgente",
           "Vérifier par téléphone ou en interne",
-          "Partager ces réflexes avec ses collègues"
+          "Partager ces réflexes avec ses collègues",
+          "Ne pas hésiter à consulter Ernest si vous avez le moindre doute.",
+          "Si le message précise : \n « Je suis en réunion » \n « Ne m’appelle pas » \n « Je suis au téléphone » \n Ce n’est pas un détail. \n C’est souvent une façon de vous empêcher de vérifier. \n Un fraudeur contrôle le canal de communication. \n Il ne veut surtout pas que vous sortiez de ce canal. \n Retenez ceci : \n Si on vous décourage de confirmer, c’est justement le moment de confirmer. \n Toujours par un canal alternatif."
         ]
       }
     },
@@ -426,6 +476,48 @@
           "next": "r8"
         },
         {
+          "id": "r7b1",
+          "type": "question",
+          "message": "Combien de temps peut-on conserver des données personnelles ?",
+          "options": [
+          {
+          "id": "a",
+          "label": "Indéfiniment, au cas où elles servent un jour.",
+          "correct": false,
+          "feedback": "Non. Le RGPD impose une durée de conservation limitée."
+          },
+          {
+          "id": "b",
+          "label": "Uniquement pendant la durée nécessaire à l'objectif prévu.",
+          "correct": true,
+          "feedback": "Exact. Les données ne doivent pas être conservées sans raison valable."
+          }
+          ],
+          "tip": "Une donnée inutile devient un risque inutile.",
+          "next": "r7b2"
+          },
+          {
+          "id": "r7b2",
+          "type": "question",
+          "message": "Une personne peut-elle demander à accéder ou supprimer ses données ?",
+          "options": [
+          {
+          "id": "a",
+          "label": "Non, l’entreprise à interdiction de lui fournir ce type d’informations.",
+          "correct": false,
+          "feedback": "Non. Les personnes disposent de droits sur LEURS données. C’est un pilier central du RGPD."
+          },
+          {
+          "id": "b",
+          "label": "Oui, elle dispose de droits d’accès, de rectification et d’effacement.",
+          "correct": true,
+          "feedback": "Exact. C’est un pilier central du RGPD."
+          }
+          ],
+          "tip": "Les utilisateurs doivent concerver le contrôle sur leurs données.",
+          "next": "r8"
+          },
+        {
           "id": "r8",
           "type": "question",
           "message": "Pour résumer le RGPD au quotidien :\n\n1. Je collecte seulement l'utile\n2. Je partage uniquement si c'est nécessaire\n3. Je sécurise les envois\n4. Je signale les erreurs\n\nVous venez d'acquérir des réflexes solides pour manipuler des données personnelles en toute confiance.",
@@ -458,3 +550,28 @@
     }
   ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
