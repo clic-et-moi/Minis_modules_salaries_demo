@@ -331,7 +331,7 @@
         {
           "id": "f8",
           "type": "question",
-          "message": "Pour résumer la fraude au PDG :\n\n1. Je me méfie de l'urgence\n2. Je vérifie par un autre canal\n3. Je n'agis jamais seul\n4. Je signale immédiatement\n\nVous venez d'acquérir des réflexes avancés contre une fraude redoutablement efficace.",
+          "message": "A retenir lors d'une fraude, si le message précise : \n « Je suis en réunion » \n « Ne m’appelle pas » \n « Je suis au téléphone » \n Ce n’est pas un détail. \n C’est souvent une façon de vous empêcher de vérifier. \n Un fraudeur contrôle le canal de communication. \n Il ne veut surtout pas que vous sortiez de ce canal.",
           "options": [
             {
               "id": "a",
@@ -355,9 +355,7 @@
         "actions": [
           "Toujours ralentir face à une demande urgente",
           "Vérifier par téléphone ou en interne",
-          "Partager ces réflexes avec ses collègues",
-          "Ne pas hésiter à consulter Ernest si vous avez le moindre doute.",
-          "Si le message précise : \n « Je suis en réunion » \n « Ne m’appelle pas » \n « Je suis au téléphone » \n Ce n’est pas un détail. \n C’est souvent une façon de vous empêcher de vérifier. \n Un fraudeur contrôle le canal de communication. \n Il ne veut surtout pas que vous sortiez de ce canal. \n Retenez ceci : \n Si on vous décourage de confirmer, c’est justement le moment de confirmer. \n Toujours par un canal alternatif."
+          "Ne pas hésiter à consulter Ernest si vous avez le moindre doute."
         ]
       }
     },
