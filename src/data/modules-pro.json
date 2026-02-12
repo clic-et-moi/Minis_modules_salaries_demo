@@ -10,7 +10,7 @@
       "level": "Intermédiaire / Avancé",
       "steps": [
         {
-          "id": "d2",
+          "id": "d1",
           "type": "question",
           "message": "On parle ici d'une attaque appelée DDoS.\n\nÀ votre avis, qu’est-ce qu’une attaque DDoS ?",
           "options": [
@@ -28,10 +28,10 @@
             }
           ],
           "tip": "Une attaque DDoS cherche à bloquer, pas à espionner.",
-          "next": "d3"
+          "next": "d2"
         },
         {
-          "id": "d3",
+          "id": "d2",
           "type": "question",
           "message": "C’est ce qui est arrivé lors d’une cyberattaque visant un grand service public français.\n\nSites web, applications et banque en ligne étaient hors service pendant plusieurs heures.\n\nÀ votre avis, quel était l’objectif principal de l’attaque ?",
           "options": [
@@ -45,14 +45,14 @@
               "id": "b",
               "label": "Empêcher les services de fonctionner.",
               "correct": true,
-              "feedback": "Exact. Le but était de rendre les services indisponibles."
+              "feedback": "C'est vrai. Le but était de rendre les services indisponibles."
             }
           ],
           "tip": "Une panne massive peut être intentionnelle.",
-          "next": "d4"
+          "next": "d3"
         },
         {
-          "id": "d4",
+          "id": "d3",
           "type": "question",
           "message": "Le sigle DDoS signifie :",
           "options": [
@@ -70,31 +70,73 @@
             }
           ],
           "tip": "Distribué signifie que l’attaque vient de nombreuses sources.",
-          "next": "d5"
+          "next": "d4"
         },
+        {
+          "id": "d4",
+          "type": "question",
+          "message": "Une attaque DDoS signifie-t-elle forcément que vos données ont été volées ?",
+          "options": [
+          {
+          "id": "a",
+          "label": "Oui, il y a forcément eu un vol de données.",
+          "correct": false,
+          "feedback": "Non. Une attaque DDoS vise principalement à bloquer un service, pas à voler des données."
+          },
+          {
+          "id": "b",
+          "label": "Non, l'objectif principal est de rendre le service indisponible.",
+          "correct": true,
+          "feedback": "Effectivement. Le but est la saturation, pas l’exfiltration."
+          }
+          ],
+          "tip": "Blocage ne signifie pas forcément fuite.",
+          "next": "d5"
+          },
         {
           "id": "d5",
           "type": "question",
-          "message": "Pourquoi une attaque DDoS est-elle difficile à bloquer ?",
+          "message": "Lors d’une panne massive, vous recevez un email affirmant : « Cliquez ici pour réactiver votre accès immédiatement ».\n\nQue devez-vous faire ?",
           "options": [
-            {
-              "id": "a",
-              "label": "Parce que les requêtes ressemblent à de vraies connexions.",
-              "correct": true,
-              "feedback": "Exact. Le trafic paraît légitime."
-            },
-            {
-              "id": "b",
-              "label": "Parce que les serveurs sont toujours mal protégés.",
-              "correct": false,
-              "feedback": "Même bien protégés, ils peuvent être saturés. \n Une attaque DDos est difficile à bloquer parce que les requêtes ressemblent à de vraies connexions."
-            }
+          {
+          "id": "a",
+          "label": "Cliquer rapidement pour rétablir l'accès.",
+          "correct": false,
+          "feedback": "Attention. Les cybercriminels profitent souvent des pannes pour lancer des campagnes de phishing."
+          },
+          {
+          "id": "b",
+          "label": "Vérifier la source et passer par les canaux officiels.",
+          "correct": true,
+          "feedback": "Exact. En période de crise, il faut redoubler de vigilance."
+          }
           ],
-          "tip": "L’attaque imite un usage normal, mais à grande échelle.",
+          "tip": "Les attaques secondaires sont fréquentes pendant une panne.",
           "next": "d6"
-        },
+          },
+          {
+            "id": "d6",
+            "type": "question",
+            "message": "Pourquoi une attaque DDoS est-elle difficile à bloquer ?",
+            "options": [
+              {
+                "id": "a",
+                "label": "Parce que les requêtes ressemblent à de vraies connexions.",
+                "correct": true,
+                "feedback": "Vrai, Le trafic paraît légitime."
+              },
+              {
+                "id": "b",
+                "label": "Parce que les serveurs sont toujours mal protégés.",
+                "correct": false,
+                "feedback": "Même bien protégés, ils peuvent être saturés. \n Une attaque DDos est difficile à bloquer parce que les requêtes ressemblent à de vraies connexions."
+              }
+            ],
+            "tip": "L’attaque imite un usage normal, mais à grande échelle.",
+            "next": "d7"
+          },
         {
-          "id": "d6",
+          "id": "d7",
           "type": "question",
           "message": "Lors d’une panne liée à une attaque, quel est le meilleur réflexe ?",
           "options": [
@@ -112,10 +154,10 @@
             }
           ],
           "tip": "Votre vigilance fait partie de la sécurité.",
-          "next": "d7"
+          "next": "d8"
         },
         {
-          "id": "d7",
+          "id": "d8",
           "type": "question",
           "message": "Pour résumer :\n\n1. Une panne peut être une attaque\n2. Une attaque DDoS bloque les services\n3. Les messages reçus doivent être vérifiés\n4. L’IT doit être informée\n\nVous êtes désormais mieux préparé face aux pannes massives.",
           "options": [
