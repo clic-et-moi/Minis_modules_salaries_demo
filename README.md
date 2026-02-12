@@ -1,6 +1,8 @@
 # Minis modules salariés + utilisateur Ernest
 
-Application web de **modules de formation interactifs** sous forme de chat. L?assistant **Ernest** guide l?utilisateur à travers des parcours (cyberharcèlement, etc.) avec questions, feedbacks et conseils.
+Application web de **modules de formation interactifs** sous forme de chat. L'assistant **Ernest** guide l'utilisateur à travers des parcours (cyberharcèlement, etc.) avec questions, feedbacks et conseils.
+
+**Démo en ligne :** [https://minimodulesdemo.netlify.app/](https://minimodulesdemo.netlify.app/)
 
 ---
 
