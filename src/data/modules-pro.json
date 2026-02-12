@@ -450,12 +450,12 @@
             }
           ],
           "tip": "La sécurité fait partie de la conformité.",
-          "next": "r5"
+          "next": "r6"
         },
         {
-          "id": "r5",
+          "id": "r6",
           "type": "question",
-          "message": "Dernière question essentielle.\n\nSi vous constatez une erreur : fichier envoyé à la mauvaise personne, perte de données… que devez-vous faire ?",
+          "message": "Si vous constatez une erreur : fichier envoyé à la mauvaise personne, perte de données… que devez-vous faire ?",
           "options": [
             {
               "id": "a",
@@ -471,7 +471,7 @@
             }
           ],
           "tip": "Un incident signalé à temps peut être maîtrisé.",
-          "next": "r8"
+          "next": "r7b1"
         },
         {
           "id": "r7b1",
@@ -497,7 +497,7 @@
           {
           "id": "r7b2",
           "type": "question",
-          "message": "Une personne peut-elle demander à accéder ou supprimer ses données ?",
+          "message": "Dernière question essentielle.\n Une personne peut-elle demander à accéder ou supprimer ses données ?",
           "options": [
           {
           "id": "a",
