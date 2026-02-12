@@ -77,64 +77,64 @@
           "type": "question",
           "message": "Une attaque DDoS signifie-t-elle forcément que vos données ont été volées ?",
           "options": [
-          {
-          "id": "a",
-          "label": "Oui, il y a forcément eu un vol de données.",
-          "correct": false,
-          "feedback": "Non. Une attaque DDoS vise principalement à bloquer un service, pas à voler des données."
-          },
-          {
-          "id": "b",
-          "label": "Non, l'objectif principal est de rendre le service indisponible.",
-          "correct": true,
-          "feedback": "Effectivement. Le but est la saturation, pas l’exfiltration."
-          }
+            {
+              "id": "a",
+              "label": "Oui, il y a forcément eu un vol de données.",
+              "correct": false,
+              "feedback": "Non. Une attaque DDoS vise principalement à bloquer un service, pas à voler des données."
+            },
+            {
+              "id": "b",
+              "label": "Non, l'objectif principal est de rendre le service indisponible.",
+              "correct": true,
+              "feedback": "Effectivement. Le but est la saturation, pas l’exfiltration."
+            }
           ],
           "tip": "Blocage ne signifie pas forcément fuite.",
           "next": "d5"
-          },
+        },
         {
           "id": "d5",
           "type": "question",
           "message": "Lors d’une panne massive, vous recevez un email affirmant : « Cliquez ici pour réactiver votre accès immédiatement ».\n\nQue devez-vous faire ?",
           "options": [
-          {
-          "id": "a",
-          "label": "Cliquer rapidement pour rétablir l'accès.",
-          "correct": false,
-          "feedback": "Attention. Les cybercriminels profitent souvent des pannes pour lancer des campagnes de phishing."
-          },
-          {
-          "id": "b",
-          "label": "Vérifier la source et passer par les canaux officiels.",
-          "correct": true,
-          "feedback": "Exact. En période de crise, il faut redoubler de vigilance."
-          }
+            {
+              "id": "a",
+              "label": "Cliquer rapidement pour rétablir l'accès.",
+              "correct": false,
+              "feedback": "Attention. Les cybercriminels profitent souvent des pannes pour lancer des campagnes de phishing."
+            },
+            {
+              "id": "b",
+              "label": "Vérifier la source et passer par les canaux officiels.",
+              "correct": true,
+              "feedback": "Exact. En période de crise, il faut redoubler de vigilance."
+            }
           ],
           "tip": "Les attaques secondaires sont fréquentes pendant une panne.",
           "next": "d6"
-          },
-          {
-            "id": "d6",
-            "type": "question",
-            "message": "Pourquoi une attaque DDoS est-elle difficile à bloquer ?",
-            "options": [
-              {
-                "id": "a",
-                "label": "Parce que les requêtes ressemblent à de vraies connexions.",
-                "correct": true,
-                "feedback": "Vrai, Le trafic paraît légitime."
-              },
-              {
-                "id": "b",
-                "label": "Parce que les serveurs sont toujours mal protégés.",
-                "correct": false,
-                "feedback": "Même bien protégés, ils peuvent être saturés. \n Une attaque DDos est difficile à bloquer parce que les requêtes ressemblent à de vraies connexions."
-              }
-            ],
-            "tip": "L’attaque imite un usage normal, mais à grande échelle.",
-            "next": "d7"
-          },
+        },
+        {
+          "id": "d6",
+          "type": "question",
+          "message": "Pourquoi une attaque DDoS est-elle difficile à bloquer ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Parce que les requêtes ressemblent à de vraies connexions.",
+              "correct": true,
+              "feedback": "Vrai, Le trafic paraît légitime."
+            },
+            {
+              "id": "b",
+              "label": "Parce que les serveurs sont toujours mal protégés.",
+              "correct": false,
+              "feedback": "Même bien protégés, ils peuvent être saturés. \n Une attaque DDos est difficile à bloquer parce que les requêtes ressemblent à de vraies connexions."
+            }
+          ],
+          "tip": "L’attaque imite un usage normal, mais à grande échelle.",
+          "next": "d7"
+        },
         {
           "id": "d7",
           "type": "question",
@@ -327,49 +327,49 @@
           "type": "question",
           "message": "La fraude au PDG est-elle le seul type de fraude par usurpation d’identité ?",
           "options": [
-          {
-          "id": "a",
-          "label": "Oui, c’est le principal et unique scénario.",
-          "correct": false,
-          "feedback": "Non. Il existe de nombreuses variantes basées sur la même manipulation."
-          },
-          {
-          "id": "b",
-          "label": "Non, il existe d'autres fraudes similaires.",
-          "correct": true,
-          "feedback": "Exact. La fraude au PDG n’est qu’une forme parmi d’autres."
-          }
+            {
+              "id": "a",
+              "label": "Oui, c’est le principal et unique scénario.",
+              "correct": false,
+              "feedback": "Non. Il existe de nombreuses variantes basées sur la même manipulation."
+            },
+            {
+              "id": "b",
+              "label": "Non, il existe d'autres fraudes similaires.",
+              "correct": true,
+              "feedback": "Exact. La fraude au PDG n’est qu’une forme parmi d’autres."
+            }
           ],
           "tip": "Le principe reste le même : jouer sur la confiance.",
           "next": "f7b2"
-          },
-          {
+        },
+        {
           "id": "f7b2",
           "type": "question",
           "message": "Parmi ces exemples, lesquels sont aussi des fraudes par usurpation d’identité ?",
           "options": [
-          {
-          "id": "a",
-          "label": "Un collègue qui demande un virement urgent inhabituel.",
-          "correct": false,
-          "feedback": "En réalité, cela peut être aussi une fraude si l'identité est usurpée."
-          },
-          {
-          "id": "b",
-          "label": "Un proche qui vous demande de l'argent via un nouveau numéro ou compte.",
-          "correct": false,
-          "feedback": "Cela peut également être une arnaque si l'identité est imitée."
-          },
-          {
-          "id": "c",
-          "label": "Ces deux situations peuvent être des fraudes.",
-          "correct": true,
-          "feedback": "Exact. Fraude au collègue, fraude au faux ami, faux fournisseur… le principe est toujours l’usurpation et l’urgence."
-          }
+            {
+              "id": "a",
+              "label": "Un collègue qui demande un virement urgent inhabituel.",
+              "correct": false,
+              "feedback": "En réalité, cela peut être aussi une fraude si l'identité est usurpée."
+            },
+            {
+              "id": "b",
+              "label": "Un proche qui vous demande de l'argent via un nouveau numéro ou compte.",
+              "correct": false,
+              "feedback": "Cela peut également être une arnaque si l'identité est imitée."
+            },
+            {
+              "id": "c",
+              "label": "Ces deux situations peuvent être des fraudes.",
+              "correct": true,
+              "feedback": "Exact. Fraude au collègue, fraude au faux ami, faux fournisseur… le principe est toujours l’usurpation et l’urgence."
+            }
           ],
           "tip": "Peu importe le rôle joué : PDG, collègue, ami… le mécanisme reste la manipulation.",
           "next": "f8"
-          },
+        },
         {
           "id": "f8",
           "type": "question",
@@ -520,43 +520,43 @@
           "type": "question",
           "message": "Combien de temps peut-on conserver des données personnelles ?",
           "options": [
-          {
-          "id": "a",
-          "label": "Indéfiniment, au cas où elles servent un jour.",
-          "correct": false,
-          "feedback": "Non. Le RGPD impose une durée de conservation limitée."
-          },
-          {
-          "id": "b",
-          "label": "Uniquement pendant la durée nécessaire à l'objectif prévu.",
-          "correct": true,
-          "feedback": "Exact. Les données ne doivent pas être conservées sans raison valable."
-          }
+            {
+              "id": "a",
+              "label": "Indéfiniment, au cas où elles servent un jour.",
+              "correct": false,
+              "feedback": "Non. Le RGPD impose une durée de conservation limitée."
+            },
+            {
+              "id": "b",
+              "label": "Uniquement pendant la durée nécessaire à l'objectif prévu.",
+              "correct": true,
+              "feedback": "Exact. Les données ne doivent pas être conservées sans raison valable."
+            }
           ],
           "tip": "Une donnée inutile devient un risque inutile.",
           "next": "r7b2"
-          },
-          {
+        },
+        {
           "id": "r7b2",
           "type": "question",
           "message": "Dernière question essentielle.\n Une personne peut-elle demander à accéder ou supprimer ses données ?",
           "options": [
-          {
-          "id": "a",
-          "label": "Non, l’entreprise à interdiction de lui fournir ce type d’informations.",
-          "correct": false,
-          "feedback": "Non. Les personnes disposent de droits sur LEURS données. C’est un pilier central du RGPD."
-          },
-          {
-          "id": "b",
-          "label": "Oui, elle dispose de droits d’accès, de rectification et d’effacement.",
-          "correct": true,
-          "feedback": "Exact. C’est un pilier central du RGPD."
-          }
+            {
+              "id": "a",
+              "label": "Non, l’entreprise à interdiction de lui fournir ce type d’informations.",
+              "correct": false,
+              "feedback": "Non. Les personnes disposent de droits sur LEURS données. C’est un pilier central du RGPD."
+            },
+            {
+              "id": "b",
+              "label": "Oui, elle dispose de droits d’accès, de rectification et d’effacement.",
+              "correct": true,
+              "feedback": "Exact. C’est un pilier central du RGPD."
+            }
           ],
           "tip": "Les utilisateurs doivent concerver le contrôle sur leurs données.",
           "next": "r8"
-          },
+        },
         {
           "id": "r8",
           "type": "question",
@@ -587,31 +587,215 @@
           "Signaler toute erreur ou incident rapidement"
         ]
       }
+    },
+    {
+      "id": "securite_mobile_donnees_perso_pro",
+      "icon": "📱",
+      "tag": "PRO",
+      "title": "Téléphone et séparation des usages — Protéger ses données personnelles et professionnelles",
+      "description": "Votre téléphone mélange vie privée et vie professionnelle. Découvrez pourquoi il est essentiel de séparer vos mots de passe et vos usages.",
+      "duration": "4 min",
+      "level": "Intermédiaire",
+      "steps": [
+        {
+          "id": "sp1",
+          "type": "question",
+          "message": "Sur votre téléphone, utilisez-vous à la fois des applications personnelles et professionnelles ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Oui, les deux sont présents sur le même appareil.",
+              "correct": true,
+              "feedback": "C’est aujourd’hui la situation la plus courante."
+            },
+            {
+              "id": "b",
+              "label": "Non, tout est strictement séparé.",
+              "correct": false,
+              "feedback": "Même lorsque l’on pense séparer, certains comptes restent connectés."
+            }
+          ],
+          "tip": "Un seul appareil peut contenir deux univers différents.",
+          "next": "sp2"
+        },
+        {
+          "id": "sp2",
+          "type": "question",
+          "message": "Pourquoi ce mélange personnel / professionnel représente-t-il un risque ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Parce qu’un incident sur un compte peut impacter l’autre sphère.",
+              "correct": true,
+              "feedback": "Oui !  Les usages sont liés si les accès sont liés."
+            },
+            {
+              "id": "b",
+              "label": "Il n’y a pas de risque particulier.",
+              "correct": false,
+              "feedback": "Le risque apparaît surtout lorsque les mots de passe sont réutilisés."
+            }
+          ],
+          "tip": "La séparation des accès est essentielle.",
+          "next": "sp3"
+        },
+        {
+          "id": "sp3",
+          "type": "question",
+          "message": "Est-il prudent d’utiliser le même mot de passe pour un outil professionnel et un réseau social personnel ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Oui, si le mot de passe est complexe.",
+              "correct": false,
+              "feedback": "Même complexe, un mot de passe réutilisé devient vulnérable."
+            },
+            {
+              "id": "b",
+              "label": "Non, chaque compte doit avoir un mot de passe unique.",
+              "correct": true,
+              "feedback": "Exact. Un mot de passe = un service."
+            }
+          ],
+          "tip": "La réutilisation est l’un des principaux risques actuels.",
+          "next": "sp4"
+        },
+        {
+          "id": "sp4",
+          "type": "question",
+          "message": "Si un site personnel est piraté et que vous utilisez le même mot de passe pour votre messagerie professionnelle, que peut-il se passer ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Votre compte professionnel peut être compromis.",
+              "correct": true,
+              "feedback": "Effectivement, les attaquants testent souvent les mots de passe fuités sur d’autres services."
+            },
+            {
+              "id": "b",
+              "label": "Rien, ce sont deux systèmes différents.",
+              "correct": false,
+              "feedback": "Les systèmes sont différents, mais le mot de passe est identique. les attaquants testent souvent les mots de passe fuités sur d’autres services."
+            }
+          ],
+          "tip": "Une fuite personnelle peut devenir un incident d’entreprise.",
+          "next": "sp5"
+        },
+        {
+          "id": "sp5",
+          "type": "question",
+          "message": "Et si l’entreprise subit une fuite de données contenant votre mot de passe professionnel réutilisé ailleurs ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Vos comptes personnels peuvent être testés automatiquement.",
+              "correct": true,
+              "feedback": "Exact. C’est une technique fréquente appelée test automatisé de mots de passe."
+            },
+            {
+              "id": "b",
+              "label": "Cela n’aura aucun impact sur votre vie privée.",
+              "correct": false,
+              "feedback": "Le risque existe si les mots de passe sont identiques."
+            }
+          ],
+          "tip": "Un seul mot de passe réutilisé multiplie les risques.",
+          "next": "sp6"
+        },
+        {
+          "id": "sp6",
+          "type": "question",
+          "message": "Quel est le bon réflexe pour éviter cet effet domino ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Séparer strictement les mots de passe personnels et professionnels.",
+              "correct": true,
+              "feedback": "Vrai. Cela limite l’impact d’une éventuelle fuite."
+            },
+            {
+              "id": "b",
+              "label": "Changer uniquement le mot de passe principal.",
+              "correct": false,
+              "feedback": "Chaque compte doit être protégé individuellement."
+            }
+          ],
+          "tip": "La séparation limite la propagation d’une attaque.",
+          "next": "sp7"
+        },
+        {
+          "id": "sp7",
+          "type": "question",
+          "message": "Comment gérer plusieurs mots de passe différents sans les oublier ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Utiliser un gestionnaire de mots de passe sécurisé.",
+              "correct": true,
+              "feedback": "Parfait. Cela permet d’avoir des mots de passe uniques et robustes."
+            },
+            {
+              "id": "b",
+              "label": "Les noter dans une note non protégée.",
+              "correct": false,
+              "feedback": "Cela expose tous vos accès en cas de vol ou piratage."
+            }
+          ],
+          "tip": "Un gestionnaire simplifie la sécurité.",
+          "next": "sp8"
+        },
+        {
+          "id": "sp8",
+          "type": "question",
+          "message": "Quel autre réflexe renforce la sécurité sur mobile ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Activer la double authentification (MFA).",
+              "correct": true,
+              "feedback": "Exact. Cela ajoute une protection supplémentaire même si le mot de passe fuit."
+            },
+            {
+              "id": "b",
+              "label": "Désactiver les notifications de sécurité.",
+              "correct": false,
+              "feedback": "Les alertes permettent justement de détecter un problème."
+            }
+          ],
+          "tip": "Un second facteur bloque de nombreuses attaques.",
+          "next": "sp9"
+        },
+        {
+          "id": "sp9",
+          "type": "question",
+          "message": "Pour résumer :\n\n1. Mon téléphone mélange vie privée et vie professionnelle\n2. Je n’utilise jamais le même mot de passe\n3. Une fuite dans un domaine ne doit pas impacter l’autre\n4. J’utilise des outils sécurisés et la double authentification\n\nVous adoptez une hygiène numérique professionnelle.",
+          "options": [
+            {
+              "id": "a",
+              "label": "Terminer le module",
+              "correct": true,
+              "feedback": "Bravo ! Vous protégez à la fois votre vie privée et votre entreprise."
+            }
+          ],
+          "tip": "Séparer, c’est protéger.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": [
+          "Le téléphone contient données personnelles et professionnelles",
+          "La réutilisation des mots de passe crée un effet domino",
+          "Une fuite personnelle peut impacter l’entreprise",
+          "Une fuite professionnelle peut impacter la vie privée",
+          "Un mot de passe unique par service est essentiel",
+          "La double authentification renforce la sécurité"
+        ],
+        "actions": [
+          "Vérifier que chaque compte a un mot de passe différent",
+          "Mettre en place un gestionnaire de mots de passe",
+          "Activer la double authentification sur les comptes sensibles"
+        ]
+      }
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
