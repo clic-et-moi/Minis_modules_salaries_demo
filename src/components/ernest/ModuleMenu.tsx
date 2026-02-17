@@ -26,7 +26,7 @@ export const ModuleMenu = ({
 
   return (
     <div
-      className="flex-1 w-full min-w-0 max-w-full bg-background overflow-x-hidden overflow-y-auto
+      className="flex-1 w-full min-w-0 max-w-full bg-background overflow-x-hidden overflow-y-auto no-scrollbar
         px-3 py-4 xs:px-4 xs:py-4 sm:px-4 sm:py-5 md:px-6 md:py-6
         pb-[max(80px,env(safe-area-inset-bottom))]
         pl-[max(12px,env(safe-area-inset-left))]
