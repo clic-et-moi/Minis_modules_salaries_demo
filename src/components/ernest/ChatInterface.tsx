@@ -197,11 +197,11 @@ export const ChatInterface = ({
 
       {/* Conteneur principal : flex-1 + min-h-0 = hauteur responsive sans calc fixe */}
       <div className="flex-1 flex flex-col min-h-0 overflow-hidden min-w-0">
-        {/* Zone de messages avec défilement (padding réduit pour intégration WeWeb) */}
+        {/* Zone de messages : hauteur au contenu (max-h-full pour scroll si beaucoup de messages) */}
         <div 
-          className="w-full max-w-5xl mx-auto px-3 sm:px-4 pt-2 pb-1 overflow-y-auto overflow-x-hidden no-scrollbar flex-1 min-h-0 min-w-0"
+          className="w-full max-w-5xl mx-auto px-3 sm:px-4 pt-1.5 pb-0 overflow-y-auto overflow-x-hidden no-scrollbar flex-[0_1_auto] min-h-0 max-h-full min-w-0"
         >
-          <div className="space-y-4">
+          <div className="space-y-3">
             {/* Messages de la conversation */}
             {conversationHistory.map((message) => (
               <ChatBubble key={message.id} message={message} />
@@ -225,9 +225,9 @@ export const ChatInterface = ({
           </div>
         </div>
 
-        {/* Zone d'action fixe en bas (compacte pour intégration WeWeb) */}
+        {/* Zone d'action fixe en bas (très compacte pour intégration WeWeb) */}
         <div className="border-t border-border bg-white dark:bg-background backdrop-blur-sm w-full flex-shrink-0 safe-bottom">
-          <div className="max-w-5xl mx-auto px-3 sm:px-4 py-2 sm:py-2.5 w-full">
+          <div className="max-w-5xl mx-auto px-3 sm:px-4 py-1.5 sm:py-2 w-full">
             {!isNarrativeStep && !showFeedback && showChoices && (
               <>
                 <ChoiceButtons
