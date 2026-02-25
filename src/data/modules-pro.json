@@ -587,6 +587,197 @@
           "Signaler toute erreur ou incident rapidement"
         ]
       }
+    }, 
+    {
+      "id": "usurpation_identite_numerique",
+      "icon": "🕵️",
+      "tag": "",
+      "title": "Usurpation d’identité numérique — Comprendre, détecter et réagir",
+      "description": "Apprenez à reconnaître une usurpation d’identité en ligne, comprendre comment elle fonctionne et adopter les bons réflexes pour vous protéger.",
+      "duration": "3 min",
+      "level": "Débutant / Intermédiaire",
+      "steps": [
+        {
+          "id": "u1",
+          "type": "question",
+          "message": "Selon vous, qu’est-ce qu’une usurpation d’identité numérique ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Se faire passer pour quelqu’un d’autre en utilisant ses informations personnelles.",
+              "correct": true,
+              "feedback": "Exact. L’usurpateur utilise des informations réelles pour tromper une victime."
+            },
+            {
+              "id": "b",
+              "label": "Pirater uniquement un ordinateur à distance.",
+              "correct": false,
+              "feedback": "Non. Le piratage peut être un moyen, mais l’usurpation consiste à se faire passer pour quelqu’un."
+            }
+          ],
+          "tip": "L’usurpation repose sur la tromperie.",
+          "next": "u2"
+        },
+        {
+          "id": "u2",
+          "type": "question",
+          "message": "Pourquoi un fraudeur usurpe-t-il une identité en ligne ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Pour obtenir de l’argent, des informations ou accéder à des comptes.",
+              "correct": true,
+              "feedback": "Oui. L’objectif est presque toujours financier ou stratégique."
+            },
+            {
+              "id": "b",
+              "label": "Pour améliorer la sécurité du système.",
+              "correct": false,
+              "feedback": "Non. L’usurpation vise à exploiter la confiance, pas à protéger."
+            }
+          ],
+          "tip": "L’objectif est souvent financier.",
+          "next": "u3"
+        },
+        {
+          "id": "u3",
+          "type": "question",
+          "message": "Un email provenant d’un collègue contient une demande inhabituelle et urgente.\n\nQuel est le premier réflexe ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Exécuter la demande rapidement.",
+              "correct": false,
+              "feedback": "L’urgence est souvent un signal d’alerte."
+            },
+            {
+              "id": "b",
+              "label": "Vérifier par un autre canal (appel, message interne).",
+              "correct": true,
+              "feedback": "Exact. La vérification bloque la majorité des fraudes."
+            }
+          ],
+          "tip": "Toujours vérifier hors du canal initial.",
+          "next": "u4"
+        },
+        {
+          "id": "u4",
+          "type": "question",
+          "message": "Quels éléments peuvent indiquer une usurpation d’identité ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Une adresse email légèrement différente ou/et un ton inhabituel.",
+              "correct": true,
+              "feedback": "Exact. Les détails techniques trahissent souvent la fraude."
+            },
+            {
+              "id": "b",
+              "label": "Un message poli et bien rédigé.",
+              "correct": false,
+              "feedback": "La politesse ne garantit rien. Les fraudeurs soignent souvent leurs messages."
+            }
+          ],
+          "tip": "Les petites différences sont importantes.",
+          "next": "u5"
+        },
+        {
+          "id": "u5",
+          "type": "question",
+          "message": "Si vous découvrez que votre identité a été utilisée sans votre accord, que devez-vous faire ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Ignorer la situation.",
+              "correct": false,
+              "feedback": "Ignorer aggrave souvent les conséquences."
+            },
+            {
+              "id": "b",
+              "label": "Changer vos mots de passe et signaler l’incident immédiatement.",
+              "correct": true,
+              "feedback": "Exact. Il faut agir vite pour limiter les dégâts."
+            }
+          ],
+          "tip": "Réagir rapidement limite l’impact.",
+          "next": "u6"
+        },
+        {
+          "id": "u6",
+          "type": "question",
+          "message": "Quel outil renforce fortement la protection contre l’usurpation ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "La double authentification.",
+              "correct": true,
+              "feedback": "Oui. Même si le mot de passe est compromis, l’accès reste bloqué."
+            },
+            {
+              "id": "b",
+              "label": "Utiliser le même mot de passe partout.",
+              "correct": false,
+              "feedback": "Au contraire, cela facilite l’usurpation."
+            }
+          ],
+          "tip": "Un second facteur protège vos accès.",
+          "next": "u7"
+        },
+        {
+          "id": "u7",
+          "type": "question",
+          "message": "L’usurpation d’identité concerne-t-elle uniquement les dirigeants ?",
+          "options": [
+            {
+              "id": "a",
+              "label": "Oui, seulement les profils à haute responsabilité.",
+              "correct": false,
+              "feedback": "Non. Toute personne possédant une identité numérique peut être ciblée."
+            },
+            {
+              "id": "b",
+              "label": "Non, tout utilisateur peut être ciblé.",
+              "correct": true,
+              "feedback": "Exact. Chaque compte représente une opportunité pour un fraudeur."
+            }
+          ],
+          "tip": "Chaque identité numérique a de la valeur.",
+          "next": "u8"
+        },
+        {
+          "id": "u8",
+          "type": "question",
+          "message": "Pour résumer :\n\n1. L’usurpation repose sur la tromperie\n2. L’urgence est un signal d’alerte\n3. La vérification bloque la fraude\n4. La double authentification protège efficacement\n\nVous êtes désormais mieux préparé face à l’usurpation d’identité numérique.",
+          "options": [
+            {
+              "id": "a",
+              "label": "Terminer le module",
+              "correct": true,
+              "feedback": "Bravo ! Vous savez désormais reconnaître et contrer une tentative d’usurpation."
+            }
+          ],
+          "tip": "Ralentir est souvent la meilleure défense.",
+          "next": null
+        }
+      ],
+      "summary": {
+        "keypoints": [
+          "L’usurpation consiste à se faire passer pour quelqu’un",
+          "L’urgence est un levier classique",
+          "Les petites anomalies sont révélatrices",
+          "La vérification hors canal est essentielle",
+          "La double authentification renforce la sécurité"
+        ],
+        "actions": [
+          "Toujours vérifier une demande inhabituelle",
+          "Utiliser un mot de passe unique par service",
+          "Activer la double authentification sur vos comptes sensibles"
+        ]
+      }
     }
+
+
+
   ]
+  
 }

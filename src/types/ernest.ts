@@ -26,7 +26,7 @@ export interface Module {
   icon: string;
   title: string;
   duration: string;
-  level: string;
+  level?: string;
   description?: string;
   tag?: 'classic' | 'PRO';
   steps: Step[];

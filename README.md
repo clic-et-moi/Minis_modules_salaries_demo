@@ -46,7 +46,7 @@ Application web de **modules de formation interactifs** sous forme de chat. L'as
   ```bash
   npm run dev
   ```
-  Puis ouvrir l?URL affichée (souvent `http://localhost:5173`).
+  Puis ouvrir l'URL affichée dans le terminal : **`http://localhost:8080`** (port configuré dans `vite.config.ts`).
 
 - **Build de production** :
   ```bash

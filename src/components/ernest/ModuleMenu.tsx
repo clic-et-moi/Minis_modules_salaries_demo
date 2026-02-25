@@ -103,8 +103,9 @@ export const ModuleMenu = ({
               }
             };
 
-            // Get difficulty level color
-            const getDifficultyColor = (level: string) => {
+            // Get difficulty level color (level peut être absent dans certains modules)
+            const getDifficultyColor = (level: string | undefined) => {
+              if (!level || typeof level !== 'string') return 'bg-gray-100 text-gray-800';
               switch (level.toLowerCase()) {
                 case 'débutant':
                   return 'bg-green-100 text-green-800';
@@ -122,7 +123,7 @@ export const ModuleMenu = ({
                 key={module.id}
                 onClick={() => onSelectModule(module)}
                 className="group relative p-3 xs:p-3 sm:p-4 rounded-xl border border-border bg-card text-left transition-all hover:shadow-md hover:border-primary/30 hover:bg-card/80 min-h-[44px] touch-manipulation w-full min-w-0 overflow-hidden"
-                aria-label={`${module.title} - ${module.duration} - ${module.level}`}
+                aria-label={`${module.title} - ${module.duration}${module.level ? ` - ${module.level}` : ''}`}
               >
                 <div className="flex flex-col h-full min-w-0">
                   <div className="flex items-start gap-2 xs:gap-2 sm:gap-3 mb-2 xs:mb-2 sm:mb-3 min-w-0">
@@ -158,9 +159,11 @@ export const ModuleMenu = ({
                       <span className="truncate">{module.duration}</span>
                     </span>
                     
-                    <span className={`text-xs font-medium px-2 py-0.5 rounded-full flex-shrink-0 truncate max-w-full ${getDifficultyColor(module.level)}`}>
-                      {module.level}
-                    </span>
+                    {(module.level != null && module.level !== '') && (
+                      <span className={`text-xs font-medium px-2 py-0.5 rounded-full flex-shrink-0 truncate max-w-full ${getDifficultyColor(module.level)}`}>
+                        {module.level}
+                      </span>
+                    )}
                   </div>
                 </div>
                 
