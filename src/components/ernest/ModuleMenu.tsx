@@ -26,14 +26,14 @@ export const ModuleMenu = ({
 
   return (
     <div
-      className="flex-1 w-full min-w-0 max-w-full bg-background overflow-x-hidden overflow-y-auto no-scrollbar
+      className="w-full min-w-0 max-w-full bg-background overflow-x-hidden overflow-y-visible
         px-3 py-4 xs:px-4 xs:py-4 sm:px-4 sm:py-5 md:px-6 md:py-6
         pb-[max(80px,env(safe-area-inset-bottom))]
         pl-[max(12px,env(safe-area-inset-left))]
         pr-[max(12px,env(safe-area-inset-right))]
         pt-[max(16px,env(safe-area-inset-top))]"
     >
-      <div className="w-full min-w-0 min-h-[100dvh] px-0 space-y-3 xs:space-y-4 sm:space-y-6">
+      <div className="w-full min-w-0 px-0 space-y-3 xs:space-y-4 sm:space-y-6">
         <div className="text-center space-y-1 xs:space-y-2">
           <h1 className="text-sm xs:text-base sm:text-lg font-['Work_Sans'] font-bold text-foreground leading-tight">
             Les minis modules cyber
