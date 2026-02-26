@@ -51,6 +51,42 @@ export const ErnestCyberChat = ({
     setState((prev) => ({ ...prev, progress: progressHook.progress }));
   }, [progressHook.progress]);
 
+  // Auto-resize support when embedded in an iframe (Option B)
+  useEffect(() => {
+    const sendHeight = () => {
+      if (typeof window === 'undefined') return;
+      const root = document.getElementById('ernest-root');
+      if (!root || !window.parent || window.parent === window) return;
+
+      const height = root.scrollHeight;
+      window.parent.postMessage({ type: 'ernest-resize', height }, '*');
+    };
+
+    // Initial send
+    sendHeight();
+
+    // Observe size changes of the Ernest root container
+    const root = document.getElementById('ernest-root');
+    let observer: ResizeObserver | null = null;
+    if (root && typeof ResizeObserver !== 'undefined') {
+      observer = new ResizeObserver(() => {
+        sendHeight();
+      });
+      observer.observe(root);
+    }
+
+    // Also listen to window resize as a fallback
+    window.addEventListener('resize', sendHeight);
+
+    return () => {
+      window.removeEventListener('resize', sendHeight);
+      if (observer && root) {
+        observer.unobserve(root);
+        observer.disconnect();
+      }
+    };
+  }, []);
+
   const dispatchEvent = (type: string, payload?: any) => {
     const event = { type, payload: { ...payload, timestamp: Date.now() } };
     
