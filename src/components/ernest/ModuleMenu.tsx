@@ -34,14 +34,6 @@ export const ModuleMenu = ({
         pt-[max(16px,env(safe-area-inset-top))]"
     >
       <div className="w-full min-w-0 px-0 space-y-3 xs:space-y-4 sm:space-y-6">
-        <div className="text-center space-y-1 xs:space-y-2">
-          <h1 className="text-sm xs:text-base sm:text-lg font-['Work_Sans'] font-bold text-foreground leading-tight">
-            Les minis modules cyber
-          </h1>
-          <p className="text-xs sm:text-sm text-muted-foreground">
-            Sécurité intelligente à portée de main
-          </p>
-        </div>
 
         {/* Progress Overview with Blue Styling */}
         <Card className="p-3 xs:p-4 sm:p-6 min-w-0 overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 shadow-sm">
