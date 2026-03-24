@@ -2,6 +2,9 @@
 export const DEFAULT_USER_MODULES_PROGRESS_URL =
   'https://xpls-geth-5exy.p7.xano.io/api:9x7E18zP/user_modules_progress';
 
+/** Datasource Xano ciblée par défaut (ne pas toucher `live` tant que ce n’est pas voulu). */
+export const DEFAULT_XANO_DATA_SOURCE = 'demo';
+
 export type XanoUserModuleProgressPayload = {
   user_id: string;
   module_id: string;
@@ -12,17 +15,28 @@ export type XanoUserModuleProgressPayload = {
   update_at: string;
 };
 
+export type PostUserModuleProgressOptions = {
+  authToken?: string;
+  /**
+   * Header `X-Data-Source`. Par défaut : {@link DEFAULT_XANO_DATA_SOURCE} (`demo`).
+   * Passe explicitement `live` (ou autre) uniquement quand tu veux écrire en prod.
+   */
+  dataSource?: string;
+};
+
 export async function postUserModuleProgress(
   url: string,
   payload: XanoUserModuleProgressPayload,
-  authToken?: string
+  options?: PostUserModuleProgressOptions
 ): Promise<void> {
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
   };
-  if (authToken) {
-    headers.Authorization = `Bearer ${authToken}`;
+  if (options?.authToken) {
+    headers.Authorization = `Bearer ${options.authToken}`;
   }
+  headers['X-Data-Source'] =
+    options?.dataSource ?? DEFAULT_XANO_DATA_SOURCE;
 
   const res = await fetch(url, {
     method: 'POST',
