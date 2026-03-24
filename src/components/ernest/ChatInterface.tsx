@@ -183,7 +183,7 @@ export const ChatInterface = ({
   };
 
   return (
-    <div className="w-full min-w-0 max-w-full min-h-[100dvh] max-h-[100dvh] overflow-hidden bg-white dark:bg-background flex flex-col pb-[max(1.5rem,env(safe-area-inset-bottom))] safe-top">
+    <div className="w-full min-w-0 max-w-full min-h-0 overflow-visible bg-white dark:bg-background flex flex-col pb-[max(1.5rem,env(safe-area-inset-bottom))] safe-top">
       {headerContainer ? createPortal(renderHeader('w-full max-w-3xl px-2 sm:px-4'), headerContainer) : null}
       
       {/* En-tête fixe si non dans un conteneur */}
@@ -196,10 +196,10 @@ export const ChatInterface = ({
       )}
 
       {/* Conteneur principal : flex-1 + min-h-0 = hauteur responsive sans calc fixe */}
-      <div className="flex-1 flex flex-col min-h-0 overflow-hidden min-w-0">
+      <div className="flex-1 flex flex-col min-h-0 overflow-visible min-w-0">
         {/* Zone de messages : hauteur au contenu (max-h-full pour scroll si beaucoup de messages) */}
-        <div 
-          className="w-full max-w-5xl mx-auto px-3 sm:px-4 pt-1.5 pb-0 overflow-y-auto overflow-x-hidden no-scrollbar flex-[0_1_auto] min-h-0 max-h-full min-w-0"
+        <div
+          className="w-full max-w-5xl mx-auto px-3 sm:px-4 pt-1.5 pb-0 overflow-visible flex-[0_1_auto] min-h-0 min-w-0"
         >
           <div className="space-y-3">
             {/* Messages de la conversation */}

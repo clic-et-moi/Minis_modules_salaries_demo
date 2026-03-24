@@ -14,7 +14,7 @@ export const ModuleSummary = ({
   onBackToMenu,
 }: ModuleSummaryProps) => {
   return (
-    <div className="flex-1 w-full min-w-0 max-w-full bg-background flex items-center justify-center p-3 xs:p-4 sm:p-6 safe-area overflow-y-auto overflow-x-hidden">
+    <div className="flex-1 w-full min-w-0 max-w-full bg-background flex items-center justify-center p-3 xs:p-4 sm:p-6 safe-area overflow-visible">
       <div className="w-full max-w-2xl min-w-0 mx-auto px-0 space-y-4 sm:space-y-5 animate-scale-in py-4">
         {/* Success Banner */}
         <div className="bg-success/10 border border-success/20 rounded-2xl px-4 py-3 sm:px-5 sm:py-4 shadow-sm">

@@ -15,7 +15,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="ernest-app flex-1 w-full min-w-0 max-w-full overflow-x-hidden flex flex-col min-h-[100dvh]">
+    <div className="ernest-app flex-1 w-full min-w-0 max-w-full overflow-x-hidden flex flex-col min-h-0">
       {/* hasProAccess : passer true quand project_id Xano donne accès PRO */}
       <ErnestCyberChat
         hasProAccess={true}
