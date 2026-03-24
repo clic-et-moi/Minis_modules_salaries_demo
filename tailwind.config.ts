@@ -28,8 +28,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
-        heading: ['Roboto Slab', 'Roboto', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        sans: ['var(--font-sans)'],
+        heading: ['var(--font-heading)'],
       },
       colors: {
         border: "hsl(var(--border))",

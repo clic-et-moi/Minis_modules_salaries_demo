@@ -58,7 +58,11 @@ export const ErnestCyberChat = ({
       const root = document.getElementById('ernest-root');
       if (!root || !window.parent || window.parent === window) return;
 
-      const height = root.scrollHeight;
+      const height = Math.max(
+        root.scrollHeight,
+        document.body?.scrollHeight || 0,
+        document.documentElement?.scrollHeight || 0
+      );
       window.parent.postMessage({ type: 'ernest-resize', height }, '*');
     };
 

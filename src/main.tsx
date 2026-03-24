@@ -2,10 +2,12 @@ import { createRoot } from "react-dom/client";
 import { Component, type ReactNode } from "react";
 import App from "./App.tsx";
 import "./index.css";
+import { applyTenant, resolveTenant } from "./lib/tenant";
 
 // Forcer le mode clair
 localStorage.removeItem('theme');
 document.documentElement.classList.remove('dark');
+applyTenant(resolveTenant());
 
 class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean; error: Error | null }> {
   state = { hasError: false, error: null as Error | null };
@@ -34,6 +36,13 @@ const rootEl = document.getElementById("root");
 if (!rootEl) {
   document.body.innerHTML = '<p style="padding:2rem;font-family:system-ui">Élément #root introuvable.</p>';
 } else {
+  const isEmbedded = window.parent !== window;
+  if (isEmbedded) {
+    document.documentElement.classList.add('embedded-iframe');
+    document.body.classList.add('embedded-iframe');
+    rootEl.classList.add('embedded-iframe-root');
+  }
+
   createRoot(rootEl).render(
     <ErrorBoundary>
       <App />
