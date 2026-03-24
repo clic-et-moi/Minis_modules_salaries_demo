@@ -25,6 +25,7 @@ export const ErnestCyberChat = ({
   xanoUserId,
   xanoUserModulesProgressUrl,
   xanoAuthToken,
+  xanoDataSource,
 }: ErnestCyberChatProps) => {
   const modules = useMemo(() => {
     if (customModules) return customModules;
@@ -265,7 +266,7 @@ export const ErnestCyberChat = ({
             completed: true,
             update_at: new Date().toISOString(),
           },
-          xanoAuthToken
+          { authToken: xanoAuthToken, dataSource: xanoDataSource }
         ).catch((err) => {
           console.error('Ernest — échec enregistrement progression Xano:', err);
         });

@@ -93,6 +93,12 @@ export interface ErnestCyberChatProps {
   xanoUserModulesProgressUrl?: string;
   /** Bearer optionnel si l’API Xano est protégée. */
   xanoAuthToken?: string;
+  /**
+   * Datasource Xano (`X-Data-Source`) pour le POST progression.
+   * Par défaut côté client : `demo` — ne pas renseigner pour éviter d’écrire sur `live`.
+   * Passe `live` seulement quand tu veux la prod.
+   */
+  xanoDataSource?: string;
 }
 
 export interface ErnestEvent {
