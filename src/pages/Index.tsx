@@ -19,6 +19,8 @@ const Index = () => {
       {/* hasProAccess : passer true quand project_id Xano donne accès PRO */}
       <ErnestCyberChat
         hasProAccess={true}
+        xanoUserId={import.meta.env.VITE_XANO_USER_ID}
+        xanoAuthToken={import.meta.env.VITE_XANO_AUTH_TOKEN}
         onEvent={(event) => {
           console.log('Ernest event from prop:', event);
         }}

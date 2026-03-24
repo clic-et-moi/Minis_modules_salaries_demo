@@ -11,6 +11,8 @@ export type XanoUserModuleProgressPayload = {
   answered_steps: string[];
   current_step_id: string;
   completed: boolean;
+  /** ISO 8601 — requis par plusieurs schémas de table Xano (dont datasource `demo`). */
+  created_at: string;
   /** ISO 8601 (ex. `new Date().toISOString()`). */
   update_at: string;
 };
