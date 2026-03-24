@@ -9,6 +9,7 @@ import { ChatInterface } from './ChatInterface';
 import { ModuleSummary } from './ModuleSummary';
 import {
   DEFAULT_USER_MODULES_PROGRESS_URL,
+  buildXanoUserModuleProgressPayload,
   postUserModuleProgress,
 } from '@/api/xanoUserModuleProgress';
 
@@ -256,20 +257,17 @@ export const ErnestCyberChat = ({
       dispatchEvent('module_complete', { moduleId: state.selectedModule?.id });
 
       if (xanoUserId) {
-        const nowIso = new Date().toISOString();
-        void postUserModuleProgress(
-          progressUrl,
-          {
-            user_id: xanoUserId,
-            module_id: moduleId,
-            answered_steps: answeredSteps,
-            current_step_id: state.currentStep.id,
-            completed: true,
-            created_at: nowIso,
-            updated_at: nowIso,
-          },
-          { authToken: xanoAuthToken, dataSource: xanoDataSource }
-        ).catch((err) => {
+        const payload = buildXanoUserModuleProgressPayload({
+          userId: xanoUserId,
+          moduleId,
+          answeredSteps,
+          currentStepId: state.currentStep.id,
+          completed: true,
+        });
+        void postUserModuleProgress(progressUrl, payload, {
+          authToken: xanoAuthToken,
+          dataSource: xanoDataSource,
+        }).catch((err) => {
           console.error('Ernest — échec enregistrement progression Xano:', err);
         });
       } else if (import.meta.env.DEV) {
