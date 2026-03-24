@@ -13,8 +13,8 @@ export type XanoUserModuleProgressPayload = {
   completed: boolean;
   /** ISO 8601 — requis par plusieurs schémas de table Xano (dont datasource `demo`). */
   created_at: string;
-  /** ISO 8601 (ex. `new Date().toISOString()`). */
-  update_at: string;
+  /** ISO 8601 — aligné sur le nom de colonne / input Xano (`updated_at`, pas `update_at`). */
+  updated_at: string;
 };
 
 export type PostUserModuleProgressOptions = {

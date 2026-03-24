@@ -266,7 +266,7 @@ export const ErnestCyberChat = ({
             current_step_id: state.currentStep.id,
             completed: true,
             created_at: nowIso,
-            update_at: nowIso,
+            updated_at: nowIso,
           },
           { authToken: xanoAuthToken, dataSource: xanoDataSource }
         ).catch((err) => {
