@@ -256,6 +256,7 @@ export const ErnestCyberChat = ({
       dispatchEvent('module_complete', { moduleId: state.selectedModule?.id });
 
       if (xanoUserId) {
+        const nowIso = new Date().toISOString();
         void postUserModuleProgress(
           progressUrl,
           {
@@ -264,12 +265,17 @@ export const ErnestCyberChat = ({
             answered_steps: answeredSteps,
             current_step_id: state.currentStep.id,
             completed: true,
-            update_at: new Date().toISOString(),
+            created_at: nowIso,
+            update_at: nowIso,
           },
           { authToken: xanoAuthToken, dataSource: xanoDataSource }
         ).catch((err) => {
           console.error('Ernest — échec enregistrement progression Xano:', err);
         });
+      } else if (import.meta.env.DEV) {
+        console.warn(
+          '[Ernest] xanoUserId absent : aucun POST Xano. Renseigne la prop ou VITE_XANO_USER_ID (UUID utilisateur).'
+        );
       }
       return;
     }
