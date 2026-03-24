@@ -7,6 +7,10 @@ import { WelcomeScreen } from './WelcomeScreen';
 import { ModuleMenu } from './ModuleMenu';
 import { ChatInterface } from './ChatInterface';
 import { ModuleSummary } from './ModuleSummary';
+import {
+  DEFAULT_USER_MODULES_PROGRESS_URL,
+  postUserModuleProgress,
+} from '@/api/xanoUserModuleProgress';
 
 const baseModules = defaultModulesData.modules as Module[];
 const proModules = proModulesData.modules as Module[];
@@ -14,8 +18,13 @@ const proModules = proModulesData.modules as Module[];
 export const ErnestCyberChat = ({
   modules: customModules,
   hasProAccess = false,
+  initialProgress,
+  onProgressChange,
   theme,
   onEvent,
+  xanoUserId,
+  xanoUserModulesProgressUrl,
+  xanoAuthToken,
 }: ErnestCyberChatProps) => {
   const modules = useMemo(() => {
     if (customModules) return customModules;
@@ -23,7 +32,7 @@ export const ErnestCyberChat = ({
       ? [...baseModules, ...proModules]
       : baseModules;
   }, [customModules, hasProAccess]);
-  const progressHook = useErnestProgress();
+  const progressHook = useErnestProgress({ initialProgress, onProgressChange });
 
   const [state, setState] = useState<ErnestState>({
     currentView: 'menu',
@@ -236,10 +245,35 @@ export const ErnestCyberChat = ({
     const nextStepId = state.currentStep.next;
 
     if (!nextStepId) {
+      const moduleId = state.selectedModule.id;
+      const prog = progressHook.getModuleProgress(moduleId);
+      const answeredSteps = [
+        ...new Set([...prog.answeredSteps, state.currentStep.id]),
+      ];
+      const progressUrl =
+        xanoUserModulesProgressUrl ?? DEFAULT_USER_MODULES_PROGRESS_URL;
+
       // Module completed ; réinitialisation automatique si tous les modules sont terminés
-      progressHook.completeModule(state.selectedModule.id, modules.length);
+      progressHook.completeModule(moduleId, modules.length);
       setState((prev) => ({ ...prev, currentView: 'summary' }));
       dispatchEvent('module_complete', { moduleId: state.selectedModule?.id });
+
+      if (xanoUserId) {
+        void postUserModuleProgress(
+          progressUrl,
+          {
+            user_id: xanoUserId,
+            module_id: moduleId,
+            answered_steps: answeredSteps,
+            current_step_id: state.currentStep.id,
+            completed: true,
+            update_at: new Date().toISOString(),
+          },
+          xanoAuthToken
+        ).catch((err) => {
+          console.error('Ernest — échec enregistrement progression Xano:', err);
+        });
+      }
       return;
     }
 

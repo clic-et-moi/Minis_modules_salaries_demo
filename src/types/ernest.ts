@@ -68,12 +68,31 @@ export interface ErnestCyberChatProps {
   modules?: Module[];
   /** Si true, les modules PRO (modules-pro.json) sont ajoutés. À renseigner selon le project_id Xano. */
   hasProAccess?: boolean;
+  /**
+   * Progression initiale depuis l’app hôte (ex. WeWeb après GET Xano).
+   * Fusionnée avec le contenu du localStorage au chargement / quand la référence change.
+   */
+  initialProgress?: Record<string, Progress>;
+  /**
+   * Appelée après chaque mise à jour de progression persistée localement.
+   * L’hôte peut enchaîner POST/PATCH Xano sans que ce package appelle Xano directement.
+   */
+  onProgressChange?: (progress: Record<string, Progress>) => void;
   theme?: {
     primary?: string;
     radius?: number;
     compact?: boolean;
   };
   onEvent?: (event: ErnestEvent) => void;
+  /**
+   * UUID utilisateur Xano. Si défini, un POST vers `xanoUserModulesProgressUrl`
+   * est envoyé à la fin de chaque module (`completed: true`).
+   */
+  xanoUserId?: string;
+  /** Surcharge de l’URL POST (défaut : endpoint `user_modules_progress` du projet). */
+  xanoUserModulesProgressUrl?: string;
+  /** Bearer optionnel si l’API Xano est protégée. */
+  xanoAuthToken?: string;
 }
 
 export interface ErnestEvent {
